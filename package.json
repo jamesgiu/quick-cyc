@@ -1,0 +1,36 @@
+{
+  "name": "react-pipes",
+  "version": "1.0.0",
+  "description": "A component library for pipelines in React",
+  "main": "index.ts",
+  "scripts": {
+    "rollup": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesgiu/react-pipes.git"
+  },
+  "keywords": [
+    "react",
+    "pipelines",
+    "component",
+    "pipeline",
+    "stepper"
+  ],
+  "author": "jamesgiu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesgiu/react-pipes/issues"
+  },
+  "homepage": "https://github.com/jamesgiu/react-pipes#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/react": "^18.2.33",
+    "react": "^18.2.0",
+    "rollup": "^4.1.4",
+    "rollup-plugin-dts": "^6.1.0",
+    "typescript": "^5.2.2"
+  }
+}
