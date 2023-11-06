@@ -3,12 +3,10 @@ import "./ReactPipeline.css";
 import "../index.css";
 import Pipe, { PipeProps } from "./shared/Pipe";
 import PipelineNode, { NodeProps } from "./shared/PipelineNode";
-import { ReactPipesIntent } from "./types";
 
 export interface ReactPipelineProps {
   label: string;
-  schema: Array<NodeProps | PipeProps | ReactPipelineProps>,
-  intent: ReactPipesIntent,
+  schema: Array<NodeProps | PipeProps | ReactPipelineProps>
 }
 
 const renderPipeline = (schema: Array<NodeProps| PipeProps | ReactPipelineProps>) : JSX.Element[] => {
@@ -34,7 +32,6 @@ const renderPipeline = (schema: Array<NodeProps| PipeProps | ReactPipelineProps>
           <span className={"rp-subpipeline"}>
             <ReactPipeline
               label="embedded"
-              intent={pipeline.intent}
               schema={pipeline.schema}
             />
           </span>

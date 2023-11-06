@@ -3,7 +3,8 @@ export enum ReactPipesIntent {
     WARNING = "rp-intent-warning",
     SUCCESS = "rp-intent-success",
     FAILURE = "rp-intent-failure",
-    IN_PROGRESS = "rp-intent-in-progress"
+    IN_PROGRESS = "rp-intent-in-progress",
+    SKIPPED = "rp-intent-skipped"
 }
 
 export enum ReactPipesSize {

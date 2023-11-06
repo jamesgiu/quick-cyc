@@ -60,6 +60,55 @@ export const Primary: Story = {
     }
 };
 
+export const SkipPipeline: Story = {
+  args: {
+    label: 'Pipeline with skips',
+    schema: [
+      {
+      icon:PipelineIcon.Icon2fa,
+      intent:ReactPipesIntent.SUCCESS,
+      active:false,
+      retries:1,
+      size:ReactPipesSize.S,
+      },
+      {
+        intent:ReactPipesIntent.SKIPPED,
+        active:false,
+        size:ReactPipesSize.XS,
+      },
+      {
+        icon:PipelineIcon.IconAward,
+        intent:ReactPipesIntent.SKIPPED,
+        active:false,
+        retries:0,
+        size:ReactPipesSize.S,
+      },
+      {
+        intent:ReactPipesIntent.SKIPPED,
+        active:false,
+        size:ReactPipesSize.XS,
+      },
+      {
+        icon:PipelineIcon.IconClock,
+        intent:ReactPipesIntent.IN_PROGRESS,
+        active:true,
+        size:ReactPipesSize.S,
+      },
+      {
+        intent:ReactPipesIntent.IN_PROGRESS,
+        active:true,
+        size:ReactPipesSize.XS,
+      },
+      {
+        icon:PipelineIcon.Icon3dRotate,
+        intent:ReactPipesIntent.NONE,
+        active:false,
+        size:ReactPipesSize.S,
+      },
+    ]
+  }
+};
+
 export const Subpipeline: Story = {
   args: {
     label: 'Pipeline',
@@ -78,7 +127,6 @@ export const Subpipeline: Story = {
       },
       {
         label: "Subpipeline",
-        intent: ReactPipesIntent.SUCCESS,
         schema: [
           {
             icon:PipelineIcon.IconBrandAws,

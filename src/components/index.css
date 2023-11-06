@@ -35,6 +35,12 @@
     border-color: #c98588;
 }
 
+.rp-intent-skipped {
+    background-color: #75787c;
+    border-color: #e0e3e9;
+    opacity: 0.9;
+}
+
 @keyframes pulse-white {
 	0% {
         filter: brightness(1);

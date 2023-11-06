@@ -55,6 +55,12 @@
     background-image: repeating-linear-gradient(50deg,  #cd4246, #cd4246 10px, #c98588 15px, #c98588 20px);
 }
 
+.rp-pipe-wrapper.rp-state-active.rp-intent-skipped .rp-pipe {
+    background-image: repeating-linear-gradient(50deg, #5f6b7c, #5f6b7c 10px, #d2d5da 15px, #d2d5da 20px);
+    opacity: 0.1;
+}
+
+
 .rp-pipe-wrapper.rp-state-active .rp-pipe {
     animation: animatedBackground 200s linear infinite;
 }

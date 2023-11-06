@@ -8,7 +8,7 @@
     position: relative;
 }
 
-.rp-retries {
+.rp-top-right-icon {
     border-radius: 50%;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -18,7 +18,7 @@
     border: solid 0.1px;
 }
 
-.rp-retries.rp-size-xs {
+.rp-top-right-icon.rp-size-xs {
     width: 10px;
     height: 10px;
     padding: 10px;
@@ -26,7 +26,7 @@
     right: -10px;
 }
 
-.rp-retries.rp-size-s {
+.rp-top-right-icon.rp-size-s {
     width: 15px;
     height: 15px;
     padding: 10px;
@@ -34,7 +34,7 @@
     right: -10px;
 }
 
-.rp-retries.rp-size-m {
+.rp-top-right-icon.rp-size-m {
     width: 20px;
     height: 20px;
     padding: 10px;
@@ -43,7 +43,7 @@
     font-size: 1.2rem;
 }
 
-.rp-retries.rp-size-l {
+.rp-top-right-icon.rp-size-l {
     width: 30px;
     height: 30px;
     padding: 10px;
@@ -52,7 +52,7 @@
     font-size: 1.5rem;
 }
 
-.rp-retries.rp-size-xl {
+.rp-top-right-icon.rp-size-xl {
     width: 35px;
     height: 35px;
     padding: 10px;

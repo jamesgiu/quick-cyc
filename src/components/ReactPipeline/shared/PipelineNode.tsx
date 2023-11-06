@@ -23,9 +23,15 @@ export const PipelineNode = (props: NodeProps) => {
         <span className={"rp-node-wrapper" + ` ${props.size} ${props.intent} ${props.active ? "rp-state-active" : ""} ${props.onNodeClick !== undefined ? "rp-clickable" : ""}`}>
             <span className={"rp-node"}>
                 {
-                props.retries && 
-                    <span className={"rp-retries" + ` ${props.size} ${props.intent}`}>
+                props.retries !== undefined  &&  props.intent !== ReactPipesIntent.SKIPPED &&
+                    <span className={"rp-top-right-icon" + ` ${props.size} ${props.intent}`}>
                         {props.retries}
+                    </span>
+                }
+
+                {props.intent === ReactPipesIntent.SKIPPED &&
+                  <span className={"rp-top-right-icon" + ` ${props.size} ${props.intent}`}>
+                      <allIcons.IconPlayerSkipForwardFilled size={18}/>
                     </span>
                 }
                 <span className={"rp-node-icon"} onClick={props.onNodeClick}>
