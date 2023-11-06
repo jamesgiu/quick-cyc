@@ -1,0 +1,65 @@
+/* Sizes */
+.rp-pipe-wrapper.rp-size-xs {
+    height: 10px;
+}
+
+.rp-pipe-wrapper.rp-size-s {
+    height: 15px;
+}
+
+.rp-pipe-wrapper.rp-size-m {
+    height: 20px;
+}
+
+.rp-pipe-wrapper.rp-size-l {
+    height: 25px;
+}
+
+.rp-pipe-wrapper.rp-size-xl {
+    height: 30px;
+}
+
+.rp-pipe-wrapper {
+    overflow: hidden;
+    width: 300px;
+    border-radius: 1em;
+}
+
+.rp-pipe {
+    font-size: 2em;
+    width: 300px;
+    padding: 0.5em 1em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* Expanded the size of the image to prevent visual blips when animation loop repeats */
+    background-size: 5000%;
+}
+
+/* Intents */
+.rp-pipe-wrapper.rp-state-active.rp-intent-none .rp-pipe {
+    background-image: repeating-linear-gradient(50deg, #5f6b7c, #5f6b7c 10px, #d2d5da 15px, #d2d5da 20px);
+}
+
+.rp-pipe-wrapper.rp-state-active.rp-intent-in-progress .rp-pipe {
+    background-image: repeating-linear-gradient(50deg, #2d72d2, #2d72d2 10px, #7ca5dd 15px, #7ca5dd 20px);
+}
+
+.rp-pipe-wrapper.rp-state-active.rp-intent-success .rp-pipe {
+    background-image: repeating-linear-gradient(50deg, #238551, #238551 10px, #729984 15px, #729984 20px);
+}
+
+.rp-pipe-wrapper.rp-state-active.rp-intent-warning .rp-pipe {
+    background-image: repeating-linear-gradient(50deg,  #fbb360, #fbb360 10px, #e6caab 15px, #e6caab 20px);
+}
+
+.rp-pipe-wrapper.rp-state-active.rp-intent-failure .rp-pipe {
+    background-image: repeating-linear-gradient(50deg,  #cd4246, #cd4246 10px, #c98588 15px, #c98588 20px);
+}
+
+.rp-pipe-wrapper.rp-state-active .rp-pipe {
+    animation: animatedBackground 200s linear infinite;
+}
+
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: -100% 0; }
+  }

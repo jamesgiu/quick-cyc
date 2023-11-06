@@ -2,7 +2,8 @@ import React from "react";
 import { ReactPipesIntent, ReactPipesSize } from "../types";
 import * as allIcons from "@tabler/icons-react";
 import { PipelineIcon } from "../icons";
-import "./PipelineNode.css"
+import "./PipelineNode.css";
+import "../../index.css";
 
 
 export interface NodeProps {

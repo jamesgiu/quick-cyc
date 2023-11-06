@@ -1,12 +1,19 @@
 import React from "react";
-import { ReactPipesIntent } from "../types";
+import { ReactPipesIntent, ReactPipesSize } from "../types";
+import "./Pipe.css";
 
 export interface PipeProps {
-    intent: ReactPipesIntent
+    intent?: ReactPipesIntent,
+    active?: boolean,
+    size: ReactPipesSize,
 }
 
 export const Pipe = (props: PipeProps) => {
-    return "yo";
+    return (
+        <div className={"rp-pipe-wrapper" + ` ${props.size} ${props.intent} ${props.active ? "rp-state-active" : ""}`}>
+            <div className={"rp-pipe"}/>
+        </div>
+    );
   };
   
   export default Pipe;
