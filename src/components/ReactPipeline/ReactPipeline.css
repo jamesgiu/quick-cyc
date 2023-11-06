@@ -1,0 +1,12 @@
+.rp-pipeline {
+    display: flex;
+    flex-direction: row;
+}
+
+.rp-pipeline .rp-pipe-wrapper {
+    margin: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+    height: 50%;
+    z-index: -100;
+}

@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { ReactPipeline } from './ReactPipeline';
+import { PipelineIcon } from './icons';
+import { ReactPipesIntent, ReactPipesSize } from './types';
 
 const meta: Meta<typeof ReactPipeline> = {
     title: 'ReactPipeline',
@@ -11,16 +13,41 @@ type Story = StoryObj<typeof ReactPipeline>;
   
 export const Primary: Story = {
     args: {
-      label: 'Click',
+      label: 'Pipeline',
+      schema: [
+        {
+        icon:PipelineIcon.Icon2fa,
+        intent:ReactPipesIntent.SUCCESS,
+        active:false,
+        retries:1,
+        size:ReactPipesSize.S,
+        },
+        {
+          intent:ReactPipesIntent.SUCCESS,
+          active:false,
+          size:ReactPipesSize.XS,
+        },
+        {
+          icon:PipelineIcon.IconAward,
+          intent:ReactPipesIntent.IN_PROGRESS,
+          active:true,
+          retries:1,
+          size:ReactPipesSize.S,
+        },
+        {
+          intent:ReactPipesIntent.IN_PROGRESS,
+          active:true,
+          size:ReactPipesSize.XS,
+        },
+        {
+          icon:PipelineIcon.IconClock,
+          intent:ReactPipesIntent.NONE,
+          active:false,
+          size:ReactPipesSize.S,
+        }
+      ]
     }
 };
-
-// Copy the code below
-export const Warning: Story = {
-    args: {
-      label: 'Delete now',
-    }
-  };
   
       
 export default meta;
