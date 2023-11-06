@@ -21,7 +21,7 @@ const renderPipeline = (schema: Array<NodeProps| PipeProps | ReactPipelineProps>
             icon={node.icon}
             intent={node.intent}
             onNodeClick={node.onNodeClick}
-            retries={node.retries}
+            attempts={node.attempts}
             size={node.size}
             active={node.active}
           />

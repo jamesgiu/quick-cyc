@@ -18,7 +18,7 @@ export const Primary: Story = {
       active: true,
       icon: PipelineIcon.Icon2fa,
       size: ReactPipesSize.M,
-      retries: 2,
+      attempts: 2,
     }
 };
 

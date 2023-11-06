@@ -19,7 +19,7 @@ export const Primary: Story = {
         icon:PipelineIcon.Icon2fa,
         intent:ReactPipesIntent.SUCCESS,
         active:false,
-        retries:1,
+        attempts:1,
         size:ReactPipesSize.S,
         },
         {
@@ -31,7 +31,7 @@ export const Primary: Story = {
           icon:PipelineIcon.IconAward,
           intent:ReactPipesIntent.SUCCESS,
           active:false,
-          retries:1,
+          attempts:1,
           size:ReactPipesSize.S,
         },
         {
@@ -68,7 +68,7 @@ export const SkipPipeline: Story = {
       icon:PipelineIcon.Icon2fa,
       intent:ReactPipesIntent.SUCCESS,
       active:false,
-      retries:1,
+      attempts:1,
       size:ReactPipesSize.S,
       },
       {
@@ -80,7 +80,7 @@ export const SkipPipeline: Story = {
         icon:PipelineIcon.IconAward,
         intent:ReactPipesIntent.SKIPPED,
         active:false,
-        retries:0,
+        attempts:0,
         size:ReactPipesSize.S,
       },
       {
@@ -117,7 +117,7 @@ export const Subpipeline: Story = {
       icon:PipelineIcon.Icon2fa,
       intent:ReactPipesIntent.SUCCESS,
       active:false,
-      retries:1,
+      attempts:1,
       size:ReactPipesSize.M,
       },
       {
@@ -132,7 +132,7 @@ export const Subpipeline: Story = {
             icon:PipelineIcon.IconBrandAws,
             intent:ReactPipesIntent.SUCCESS,
             active:false,
-            retries:1,
+            attempts:1,
             size:ReactPipesSize.S,
             },
             {
@@ -144,7 +144,7 @@ export const Subpipeline: Story = {
               icon:PipelineIcon.IconClick,
               intent:ReactPipesIntent.SUCCESS,
               active:false,
-              retries:1,
+              attempts:1,
               size:ReactPipesSize.S,
             }
         ],
@@ -158,7 +158,7 @@ export const Subpipeline: Story = {
         icon:PipelineIcon.IconAward,
         intent:ReactPipesIntent.SUCCESS,
         active:false,
-        retries:1,
+        attempts:1,
         size:ReactPipesSize.M,
       },
       {
@@ -170,7 +170,7 @@ export const Subpipeline: Story = {
         icon:PipelineIcon.IconClock,
         intent:ReactPipesIntent.WARNING,
         active:true,
-        retries:30,
+        attempts:30,
         size:ReactPipesSize.M,
       },
       {

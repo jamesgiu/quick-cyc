@@ -11,7 +11,7 @@ export interface NodeProps {
     active?: boolean,
     icon: PipelineIcon,
     size: ReactPipesSize,
-    retries?: number,
+    attempts?: number,
     onNodeClick?: ()=>void,
 }
 
@@ -23,9 +23,9 @@ export const PipelineNode = (props: NodeProps) => {
         <span className={"rp-node-wrapper" + ` ${props.size} ${props.intent} ${props.active ? "rp-state-active" : ""} ${props.onNodeClick !== undefined ? "rp-clickable" : ""}`}>
             <span className={"rp-node"}>
                 {
-                props.retries !== undefined  &&  props.intent !== ReactPipesIntent.SKIPPED &&
+                props.attempts !== undefined  &&  props.intent !== ReactPipesIntent.SKIPPED &&
                     <span className={"rp-top-right-icon" + ` ${props.size} ${props.intent}`}>
-                        {props.retries}
+                        {props.attempts}
                     </span>
                 }
 
