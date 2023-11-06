@@ -1,14 +1,17 @@
 import React from "react";
 import "./ReactPipeline.css";
+import "../index.css";
 import Pipe, { PipeProps } from "./shared/Pipe";
 import PipelineNode, { NodeProps } from "./shared/PipelineNode";
+import { ReactPipesIntent } from "./types";
 
 export interface ReactPipelineProps {
   label: string;
-  schema: Array<NodeProps | PipeProps>
+  schema: Array<NodeProps | PipeProps | ReactPipelineProps>,
+  intent: ReactPipesIntent,
 }
 
-const renderPipeline = (schema: Array<NodeProps| PipeProps>) : JSX.Element[] => {
+const renderPipeline = (schema: Array<NodeProps| PipeProps | ReactPipelineProps>) : JSX.Element[] => {
   const elements : JSX.Element[] = [];
 
   schema.forEach((item) => {
@@ -25,8 +28,20 @@ const renderPipeline = (schema: Array<NodeProps| PipeProps>) : JSX.Element[] => 
             active={node.active}
           />
       );
-    } else {
-      const pipe = item as PipeProps;
+    } else if (Object.keys(item).includes("schema")) { 
+      const pipeline = item as ReactPipelineProps;
+        elements.push(
+          <span className={"rp-subpipeline"}>
+            <ReactPipeline
+              label="embedded"
+              intent={pipeline.intent}
+              schema={pipeline.schema}
+            />
+          </span>
+        )
+    }
+    else {
+      const pipe = item as PipeProps; 
       elements.push(
         <Pipe
           intent={pipe.intent}

@@ -59,6 +59,86 @@ export const Primary: Story = {
       ]
     }
 };
+
+export const Subpipeline: Story = {
+  args: {
+    label: 'Pipeline',
+    schema: [
+      {
+      icon:PipelineIcon.Icon2fa,
+      intent:ReactPipesIntent.SUCCESS,
+      active:false,
+      retries:1,
+      size:ReactPipesSize.M,
+      },
+      {
+        intent:ReactPipesIntent.SUCCESS,
+        active:false,
+        size:ReactPipesSize.S,
+      },
+      {
+        label: "Subpipeline",
+        intent: ReactPipesIntent.SUCCESS,
+        schema: [
+          {
+            icon:PipelineIcon.IconBrandAws,
+            intent:ReactPipesIntent.SUCCESS,
+            active:false,
+            retries:1,
+            size:ReactPipesSize.S,
+            },
+            {
+              intent:ReactPipesIntent.SUCCESS,
+              active:false,
+              size:ReactPipesSize.XS,
+            },
+            {
+              icon:PipelineIcon.IconClick,
+              intent:ReactPipesIntent.SUCCESS,
+              active:false,
+              retries:1,
+              size:ReactPipesSize.S,
+            }
+        ],
+      },
+      {
+        intent:ReactPipesIntent.SUCCESS,
+        active:false,
+        size:ReactPipesSize.S,
+      },
+      {
+        icon:PipelineIcon.IconAward,
+        intent:ReactPipesIntent.SUCCESS,
+        active:false,
+        retries:1,
+        size:ReactPipesSize.M,
+      },
+      {
+        intent:ReactPipesIntent.WARNING,
+        active:true,
+        size:ReactPipesSize.S,
+      },
+      {
+        icon:PipelineIcon.IconClock,
+        intent:ReactPipesIntent.WARNING,
+        active:true,
+        retries:30,
+        size:ReactPipesSize.M,
+      },
+      {
+        intent:ReactPipesIntent.NONE,
+        active:false,
+        size:ReactPipesSize.S,
+      },
+      {
+        icon:PipelineIcon.Icon3dRotate,
+        intent:ReactPipesIntent.NONE,
+        active:false,
+        size:ReactPipesSize.M,
+      },
+    ]
+  }
+};
   
       
 export default meta;
