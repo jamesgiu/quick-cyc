@@ -6,6 +6,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border: solid;
     position: relative;
+    transition: background-color 0.5s, border 0.5s;
 }
 
 .rp-top-right-icon {

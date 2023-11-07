@@ -25,8 +25,9 @@
 
 .rp-pipe-wrapper {
     overflow: hidden;
-    width: 300px;
+    width: 10vw;
     border-radius: 1em;
+    transition: background-color 0.5s, border 0.5s;
 }
 
 .rp-pipe {
