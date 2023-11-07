@@ -44,6 +44,7 @@ const renderPipeline = (schema: Array<NodeProps| PipeProps | ReactPipelineProps>
           intent={pipe.intent}
           size={pipe.size}
           active={pipe.active}
+          progressPercent={pipe.progressPercent}
         />
       );
     }

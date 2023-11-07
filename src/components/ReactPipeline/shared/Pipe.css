@@ -19,6 +19,10 @@
     height: 30px;
 }
 
+.rp-pipe-wrapper.rp-state-active {
+    background-color: #5f6b7c;
+}
+
 .rp-pipe-wrapper {
     overflow: hidden;
     width: 300px;

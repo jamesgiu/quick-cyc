@@ -35,8 +35,8 @@ export const Primary: Story = {
           size:ReactPipesSize.S,
         },
         {
-          intent:ReactPipesIntent.IN_PROGRESS,
-          active:true,
+          intent:ReactPipesIntent.SUCCESS,
+          active:false,
           size:ReactPipesSize.XS,
         },
         {
@@ -46,8 +46,9 @@ export const Primary: Story = {
           size:ReactPipesSize.S,
         },
         {
-          intent:ReactPipesIntent.NONE,
-          active:false,
+          intent:ReactPipesIntent.IN_PROGRESS,
+          active:true,
+          progressPercent: 30,
           size:ReactPipesSize.XS,
         },
         {

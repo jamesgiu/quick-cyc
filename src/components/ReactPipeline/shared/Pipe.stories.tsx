@@ -18,5 +18,15 @@ export const Primary: Story = {
     }
 };
   
+  
+export const Progress: Story = {
+  args: {
+    intent: ReactPipesIntent.IN_PROGRESS,
+    active: true,
+    size: ReactPipesSize.M,
+    progressPercent: 30,
+  }
+};
+
       
 export default meta;
