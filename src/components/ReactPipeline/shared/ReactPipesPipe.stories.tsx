@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Pipe } from './Pipe';
+import { ReactPipesPipe } from './ReactPipesPipe';
 import { ReactPipesIntent, ReactPipesSize } from '../types';
 
-const meta: Meta<typeof Pipe> = {
+const meta: Meta<typeof ReactPipesPipe> = {
     title: 'Pipe',
-    component: Pipe,
+    component: ReactPipesPipe,
   };
 
-type Story = StoryObj<typeof Pipe>;
+type Story = StoryObj<typeof ReactPipesPipe>;
   
 export const Primary: Story = {
     args: {

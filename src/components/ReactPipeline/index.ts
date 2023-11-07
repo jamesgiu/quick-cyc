@@ -1,1 +1,1 @@
-export { default } from "./ReactPipeline";
+export { default } from "./ReactPipes";

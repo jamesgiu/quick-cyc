@@ -1,15 +1,15 @@
 import React from "react";
 import { ReactPipesIntent, ReactPipesSize } from "../types";
-import "./Pipe.css";
+import "./ReactPipesPipe.css";
 
-export interface PipeProps {
+export interface ReactPipesPipeProps {
     intent?: ReactPipesIntent,
     active?: boolean,
     size: ReactPipesSize,
     progressPercent?: number,
 }
 
-export const Pipe = (props: PipeProps) => {
+export const ReactPipesPipe = (props: ReactPipesPipeProps) => {
     return (
         <div className={"rp-pipe-wrapper" + ` ${props.size} ${props.intent} ${props.active ? "rp-state-active" : ""}`}>
             <div className={"rp-pipe-loading-wrapper"} style={{width: props.progressPercent + "%"}}>
@@ -19,4 +19,4 @@ export const Pipe = (props: PipeProps) => {
     );
   };
   
-  export default Pipe;
+  export default ReactPipesPipe;

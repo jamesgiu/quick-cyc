@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ReactPipeline from "./ReactPipeline";
 import { PipelineIcon } from "./ReactPipeline/icons";
 import { ReactPipesIntent, ReactPipesSize } from "./ReactPipeline/types";
+import "./Demo.css";
 
 export const Demo = () => {
 
@@ -13,12 +14,12 @@ export const Demo = () => {
     }
 
     useEffect(()=> {
-        setTimeout(increasePercent, 60);
+        setTimeout(increasePercent, 30);
     }, []);
 
     useEffect(()=> {
         if (percentComplete < 100) {
-            setTimeout(increasePercent, 60);
+            setTimeout(increasePercent, 30);
         }
     }, [percentComplete]);
 
@@ -69,6 +70,7 @@ export const Demo = () => {
             intent: percentComplete < 90 ? ReactPipesIntent.NONE : percentComplete < 100 ? ReactPipesIntent.IN_PROGRESS : ReactPipesIntent.SUCCESS,
             active:percentComplete < 90 ? true : false,
             size:ReactPipesSize.S,
+            className: percentComplete > 90 && percentComplete < 100 ? "rp-wiggle" : undefined
           }
         ]}
         />
