@@ -32,11 +32,14 @@
 
 .rp-pipe {
     font-size: 2em;
-    width: 300px;
     padding: 0.5em 1em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     /* Expanded the size of the image to prevent visual blips when animation loop repeats */
     background-size: 5000%;
+}
+
+.rp-pipe-loading-wrapper {
+    overflow: hidden;
 }
 
 /* Intents */
