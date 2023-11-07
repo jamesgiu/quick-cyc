@@ -1,6 +1,6 @@
 import * as allIcons from "@tabler/icons-react";
 
-export enum PipelineIcon {
+export enum ReactPipesIcons {
 "Icon123"="Icon123",
 "Icon12Hours"="Icon12Hours",
 "Icon24Hours"="Icon24Hours",

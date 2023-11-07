@@ -1,8 +1,8 @@
 import React from "react";
-import "./ReactPipeline.css";
+import "./ReactPipes.css";
 import "../index.css";
-import Pipe, { ReactPipesPipeProps } from "./shared/ReactPipesPipe";
-import PipelineNode, { ReactPipesNodeProps } from "./shared/ReactPipesNode";
+import Pipe, { ReactPipesPipeProps } from "./shared/ReactPipesPipe/ReactPipesPipe";
+import PipelineNode, { ReactPipesNodeProps } from "./shared/ReactPipesNode/ReactPipesNode";
 
 export interface ReactPipesProps {
   label: string;

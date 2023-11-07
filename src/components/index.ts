@@ -1,2 +1,2 @@
 import "./index.css";
-export { default as ReactPipeline } from "./ReactPipeline";
+export { default as ReactPipes } from "./ReactPipes";

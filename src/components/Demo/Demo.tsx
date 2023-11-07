@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import React, { useState } from "react";
-import ReactPipeline from "./ReactPipeline";
-import { PipelineIcon } from "./ReactPipeline/icons";
-import { ReactPipesIntent, ReactPipesSize } from "./ReactPipeline/types";
 import "./Demo.css";
+import ReactPipes from "../ReactPipes";
+import { ReactPipesIcons } from "../ReactPipes/shared/ReactPipesNode/shared/icons";
+import { ReactPipesIntent, ReactPipesSize } from "../ReactPipes/types";
 
 export const Demo = () => {
 
@@ -25,11 +25,11 @@ export const Demo = () => {
 
     return (
     <span className={"rp-pipeline-demo"}>
-      <ReactPipeline
+      <ReactPipes
         label= {'Pipeline'}
         schema={[
           {
-          icon:PipelineIcon.Icon2fa,
+          icon:ReactPipesIcons.Icon2fa,
           intent:ReactPipesIntent.SUCCESS,
           active:false,
           attempts:1,
@@ -41,7 +41,7 @@ export const Demo = () => {
             size:ReactPipesSize.XS,
           },
           {
-            icon:PipelineIcon.IconAward,
+            icon:ReactPipesIcons.IconAward,
             intent:ReactPipesIntent.SUCCESS,
             active:false,
             attempts:1,
@@ -53,7 +53,7 @@ export const Demo = () => {
             size:ReactPipesSize.XS,
           },
           {
-            icon:PipelineIcon.IconClock,
+            icon:ReactPipesIcons.IconClock,
             intent:percentComplete < 100 ? ReactPipesIntent.IN_PROGRESS : ReactPipesIntent.SUCCESS,
             active:percentComplete < 100 ? true : false,
             attempts: Math.round(percentComplete / 20),
@@ -66,7 +66,7 @@ export const Demo = () => {
             size:ReactPipesSize.XS,
           },
           {
-            icon:PipelineIcon.Icon3dRotate,
+            icon:ReactPipesIcons.Icon3dRotate,
             intent: percentComplete < 90 ? ReactPipesIntent.NONE : percentComplete < 100 ? ReactPipesIntent.IN_PROGRESS : ReactPipesIntent.SUCCESS,
             active:percentComplete < 90 ? true : false,
             size:ReactPipesSize.S,

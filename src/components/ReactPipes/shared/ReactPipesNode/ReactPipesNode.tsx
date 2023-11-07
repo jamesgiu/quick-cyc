@@ -1,15 +1,15 @@
 import React from "react";
-import { ReactPipesIntent, ReactPipesSize } from "../types";
+import { ReactPipesIntent, ReactPipesSize } from "../../types";
 import * as allIcons from "@tabler/icons-react";
-import { PipelineIcon } from "../icons";
+import { ReactPipesIcons } from "./shared/icons";
 import "./ReactPipesNode.css";
-import "../../index.css";
+import "../../../index.css";
 
 
 export interface ReactPipesNodeProps {
     intent?: ReactPipesIntent,
     active?: boolean,
-    icon: PipelineIcon,
+    icon: ReactPipesIcons,
     size: ReactPipesSize,
     attempts?: number,
     onNodeClick?: ()=>void,

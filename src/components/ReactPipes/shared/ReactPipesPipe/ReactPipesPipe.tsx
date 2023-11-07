@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactPipesIntent, ReactPipesSize } from "../types";
+import { ReactPipesIntent, ReactPipesSize } from "../../types";
 import "./ReactPipesPipe.css";
 
 export interface ReactPipesPipeProps {

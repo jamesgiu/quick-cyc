@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { ReactPipesIntent, ReactPipesSize } from '../types';
-import { PipelineIcon } from '../icons';
+import { ReactPipesIntent, ReactPipesSize } from '../../types';
+import { ReactPipesIcons } from './shared/icons';
 import ReactPipesNode from './ReactPipesNode';
 
 const meta: Meta<typeof ReactPipesNode> = {
@@ -16,7 +16,7 @@ export const Primary: Story = {
       onNodeClick: ()=> {console.log("Clicked!")},
       intent: ReactPipesIntent.IN_PROGRESS,
       active: true,
-      icon: PipelineIcon.Icon2fa,
+      icon: ReactPipesIcons.Icon2fa,
       size: ReactPipesSize.M,
       attempts: 2,
     }

@@ -65,20 +65,20 @@
 }
 
 @keyframes pulse-in-progress {
-	0% {
+        0% {
         filter: brightness(1);
         box-shadow: 0 0 0 0 rgba(97, 155, 179, 0.7);
-	}
-	
-	70% {
+        }
+
+        70% {
         filter: brightness(1.2);
         box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
-	}
-	
-	100% {
+        }
+
+        100% {
         filter: brightness(1);
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-	}
+        }
 }
 
 @keyframes pulse-success {

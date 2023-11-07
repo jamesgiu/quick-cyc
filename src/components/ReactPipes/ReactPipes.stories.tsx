@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { ReactPipes } from './ReactPipes';
-import { PipelineIcon } from './icons';
+import { ReactPipesIcons } from './shared/ReactPipesNode/shared/icons';
 import { ReactPipesIntent, ReactPipesSize } from './types';
 
 const meta: Meta<typeof ReactPipes> = {
@@ -16,7 +16,7 @@ export const Primary: Story = {
       label: 'Pipeline',
       schema: [
         {
-        icon:PipelineIcon.Icon2fa,
+        icon:ReactPipesIcons.Icon2fa,
         intent:ReactPipesIntent.SUCCESS,
         active:false,
         attempts:1,
@@ -28,7 +28,7 @@ export const Primary: Story = {
           size:ReactPipesSize.XS,
         },
         {
-          icon:PipelineIcon.IconAward,
+          icon:ReactPipesIcons.IconAward,
           intent:ReactPipesIntent.SUCCESS,
           active:false,
           attempts:1,
@@ -40,7 +40,7 @@ export const Primary: Story = {
           size:ReactPipesSize.XS,
         },
         {
-          icon:PipelineIcon.IconClock,
+          icon:ReactPipesIcons.IconClock,
           intent:ReactPipesIntent.IN_PROGRESS,
           active:true,
           size:ReactPipesSize.S,
@@ -52,7 +52,7 @@ export const Primary: Story = {
           size:ReactPipesSize.XS,
         },
         {
-          icon:PipelineIcon.Icon3dRotate,
+          icon:ReactPipesIcons.Icon3dRotate,
           intent:ReactPipesIntent.NONE,
           active:false,
           size:ReactPipesSize.S,
@@ -66,7 +66,7 @@ export const SkipPipeline: Story = {
     label: 'Pipeline with skips',
     schema: [
       {
-      icon:PipelineIcon.Icon2fa,
+      icon:ReactPipesIcons.Icon2fa,
       intent:ReactPipesIntent.SUCCESS,
       active:false,
       attempts:1,
@@ -78,7 +78,7 @@ export const SkipPipeline: Story = {
         size:ReactPipesSize.XS,
       },
       {
-        icon:PipelineIcon.IconAward,
+        icon:ReactPipesIcons.IconAward,
         intent:ReactPipesIntent.SKIPPED,
         active:false,
         attempts:0,
@@ -90,7 +90,7 @@ export const SkipPipeline: Story = {
         size:ReactPipesSize.XS,
       },
       {
-        icon:PipelineIcon.IconClock,
+        icon:ReactPipesIcons.IconClock,
         intent:ReactPipesIntent.IN_PROGRESS,
         active:true,
         size:ReactPipesSize.S,
@@ -101,7 +101,7 @@ export const SkipPipeline: Story = {
         size:ReactPipesSize.XS,
       },
       {
-        icon:PipelineIcon.Icon3dRotate,
+        icon:ReactPipesIcons.Icon3dRotate,
         intent:ReactPipesIntent.NONE,
         active:false,
         size:ReactPipesSize.S,
@@ -115,7 +115,7 @@ export const Subpipeline: Story = {
     label: 'Pipeline',
     schema: [
       {
-      icon:PipelineIcon.Icon2fa,
+      icon:ReactPipesIcons.Icon2fa,
       intent:ReactPipesIntent.SUCCESS,
       active:false,
       attempts:1,
@@ -130,7 +130,7 @@ export const Subpipeline: Story = {
         label: "Subpipeline",
         schema: [
           {
-            icon:PipelineIcon.IconBrandAws,
+            icon:ReactPipesIcons.IconBrandAws,
             intent:ReactPipesIntent.SUCCESS,
             active:false,
             attempts:1,
@@ -142,7 +142,7 @@ export const Subpipeline: Story = {
               size:ReactPipesSize.XS,
             },
             {
-              icon:PipelineIcon.IconClick,
+              icon:ReactPipesIcons.IconClick,
               intent:ReactPipesIntent.SUCCESS,
               active:false,
               attempts:1,
@@ -156,7 +156,7 @@ export const Subpipeline: Story = {
         size:ReactPipesSize.S,
       },
       {
-        icon:PipelineIcon.IconAward,
+        icon:ReactPipesIcons.IconAward,
         intent:ReactPipesIntent.SUCCESS,
         active:false,
         attempts:1,
@@ -168,7 +168,7 @@ export const Subpipeline: Story = {
         size:ReactPipesSize.S,
       },
       {
-        icon:PipelineIcon.IconClock,
+        icon:ReactPipesIcons.IconClock,
         intent:ReactPipesIntent.WARNING,
         active:true,
         attempts:30,
@@ -180,7 +180,7 @@ export const Subpipeline: Story = {
         size:ReactPipesSize.S,
       },
       {
-        icon:PipelineIcon.Icon3dRotate,
+        icon:ReactPipesIcons.Icon3dRotate,
         intent:ReactPipesIntent.NONE,
         active:false,
         size:ReactPipesSize.M,
