@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import { ReactPipesIntent, ReactPipesSize } from "../../types";
 import * as allIcons from "@tabler/icons-react";
 import { ReactPipesIcons } from "./shared/icons";
@@ -7,10 +7,11 @@ import "../../../index.css";
 
 
 export interface ReactPipesNodeProps {
-    intent?: ReactPipesIntent,
+    intent: ReactPipesIntent,
     active?: boolean,
     icon: ReactPipesIcons,
     size: ReactPipesSize,
+    percentComplete?: number,
     attempts?: number,
     onNodeClick?: ()=>void,
     className?: string,
@@ -22,13 +23,16 @@ export const ReactPipesNode = (props: ReactPipesNodeProps) => {
 
     return( 
         <span className={"rp-node-wrapper" + ` ${props.className} ${props.size} ${props.intent} ${props.active ? "rp-state-active" : ""} ${props.onNodeClick !== undefined ? "rp-clickable" : ""}`}>
-            <span className={"rp-node"}>
+            <span className={"rp-node" + ` ${props.percentComplete && props.percentComplete < 100 ? "rp-node-loading" : ""}`}>
                 {
                 props.attempts !== undefined  &&  props.intent !== ReactPipesIntent.SKIPPED &&
                     <span className={"rp-top-right-icon" + ` ${props.size} ${props.intent}`}>
                         {props.attempts}
                     </span>
                 }
+
+                {props.percentComplete &&
+                <span className={"rp-node-percent-complete"} style={{backgroundSize: props.percentComplete + "%"}}/>}
 
                 {props.intent === ReactPipesIntent.SKIPPED &&
                   <span className={"rp-top-right-icon" + ` ${props.size} ${props.intent}`}>

@@ -14,3 +14,12 @@ export enum ReactPipesSize {
     L = "rp-size-l",
     XL = "rp-size-xl"
 }
+
+export enum ReactPipesIntentColours {
+    NONE = "#5f6b7c",
+    WARNING = "#fbb360",
+    SUCCESS = "#238551",
+    FAILURE = "#cd4246",
+    IN_PROGRESS = "#2d72d2",
+    SKIPPED = "#75787c"
+}

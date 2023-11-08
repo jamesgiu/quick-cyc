@@ -33,43 +33,44 @@ export const Demo = () => {
           intent:ReactPipesIntent.SUCCESS,
           active:false,
           attempts:1,
-          size:ReactPipesSize.S,
+          size:ReactPipesSize.M,
           },
           {
             intent:ReactPipesIntent.SUCCESS,
             active:false,
-            size:ReactPipesSize.XS,
+            size:ReactPipesSize.S,
           },
           {
             icon:ReactPipesIcons.IconAward,
             intent:ReactPipesIntent.SUCCESS,
             active:false,
             attempts:1,
-            size:ReactPipesSize.S,
+            size:ReactPipesSize.M,
           },
           {
             intent:ReactPipesIntent.SUCCESS,
             active:false,
-            size:ReactPipesSize.XS,
+            size:ReactPipesSize.S,
           },
           {
             icon:ReactPipesIcons.IconClock,
             intent:percentComplete < 100 ? ReactPipesIntent.IN_PROGRESS : ReactPipesIntent.SUCCESS,
             active:percentComplete < 100 ? true : false,
             attempts: Math.round(percentComplete / 20),
-            size:ReactPipesSize.S,
+            percentComplete: percentComplete,
+            size:ReactPipesSize.M,
           },
           {
             intent:percentComplete < 100 ? ReactPipesIntent.IN_PROGRESS : ReactPipesIntent.SUCCESS,
             active:percentComplete < 100 ? true : false,
             progressPercent: percentComplete,
-            size:ReactPipesSize.XS,
+            size:ReactPipesSize.S,
           },
           {
             icon:ReactPipesIcons.Icon3dRotate,
             intent: percentComplete < 90 ? ReactPipesIntent.NONE : percentComplete < 100 ? ReactPipesIntent.IN_PROGRESS : ReactPipesIntent.SUCCESS,
             active:percentComplete < 90 ? true : false,
-            size:ReactPipesSize.S,
+            size:ReactPipesSize.M,
             className: percentComplete > 90 && percentComplete < 100 ? "rp-wiggle" : undefined
           }
         ]}

@@ -7,6 +7,43 @@
     border: solid;
     position: relative;
     transition: background-color 0.5s, border 0.5s;
+    z-index: 0;
+}
+
+.rp-node-percent-complete {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.3;
+    transform: rotate(270deg);
+}
+
+.rp-node-wrapper.rp-intent-failure .rp-node.rp-node-loading .rp-node-percent-complete {
+    background: linear-gradient(#cd4246 0 0) left/100% 0% no-repeat #ccc;
+}
+
+.rp-node-wrapper.rp-intent-none .rp-node.rp-node-loading .rp-node-percent-complete {
+    background: linear-gradient(#5f6b7c 0 0) left/100% 0% no-repeat #ccc;
+}
+
+.rp-node-wrapper.rp-intent-in-progress .rp-node.rp-node-loading .rp-node-percent-complete {
+    background: linear-gradient(#565b61 0 0) left/100% 0% no-repeat #ccc;
+}
+
+.rp-node-wrapper.rp-intent-success .rp-node.rp-node-loading .rp-node-percent-complete {
+    background: linear-gradient(#238551 0 0) left/100% 0% no-repeat #ccc;
+}
+
+.rp-node-wrapper.rp-intent-warning .rp-node.rp-node-loading .rp-node-percent-complete {
+    background: linear-gradient(#fbb360 0 0) left/100% 0% no-repeat #ccc;
+}
+
+.rp-node-wrapper.rp-intent-skipped .rp-node.rp-node-loading .rp-node-percent-complete {
+    background: linear-gradient(#75787c 0 0) left/100% 0% no-repeat #ccc;
 }
 
 .rp-top-right-icon {
@@ -17,6 +54,7 @@
     text-align: center;
     vertical-align: middle;
     border: solid 0.1px;
+    z-index: 2;
 }
 
 .rp-top-right-icon.rp-size-xs {
@@ -62,35 +100,39 @@
     font-size: 1.8rem;
 }
 
+.rp-node-icon {
+    z-index: 1;
+}
+
 /* Sizes */
 .rp-node-wrapper.rp-size-xs,
 .rp-node-wrapper.rp-size-xs .rp-node-icon svg {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 
 .rp-node-wrapper.rp-size-s,
 .rp-node-wrapper.rp-size-s .rp-node-icon svg {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 }
 
 .rp-node-wrapper.rp-size-m,
 .rp-node-wrapper.rp-size-m .rp-node-icon svg {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
 .rp-node-wrapper.rp-size-l,
 .rp-node-wrapper.rp-size-l .rp-node-icon svg {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 .rp-node-wrapper.rp-size-xl,
 .rp-node-wrapper.rp-size-xl .rp-node-icon svg {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .rp-node-wrapper.rp-size-l,

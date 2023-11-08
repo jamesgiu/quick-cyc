@@ -7,13 +7,7 @@
     margin: auto;
     margin-left: -10px;
     margin-right: -10px;
-    height: 50%;
     z-index: -100;
-}
-
-.rp-subpipeline .rp-pipeline {
-    margin: auto;
-    margin-top: 10px;
 }
 
 .rp-subpipeline .rp-pipe-wrapper {
@@ -24,4 +18,7 @@
     max-width: 250px;
     border: dotted 0.5px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
 }

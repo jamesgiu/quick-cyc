@@ -23,6 +23,7 @@ const renderPipeline = (schema: Array<ReactPipesNodeProps| ReactPipesPipeProps |
             intent={node.intent}
             onNodeClick={node.onNodeClick}
             attempts={node.attempts}
+            percentComplete={node.percentComplete}
             size={node.size}
             active={node.active}
           />

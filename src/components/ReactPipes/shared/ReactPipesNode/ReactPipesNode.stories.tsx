@@ -19,6 +19,7 @@ export const Primary: Story = {
       icon: ReactPipesIcons.Icon2fa,
       size: ReactPipesSize.M,
       attempts: 2,
+      percentComplete: 30,
     }
 };
 

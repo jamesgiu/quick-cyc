@@ -1,22 +1,22 @@
 /* Sizes */
 .rp-pipe-wrapper.rp-size-xs {
-    height: 10px;
+    height: 5px;
 }
 
 .rp-pipe-wrapper.rp-size-s {
-    height: 15px;
+    height: 10px;
 }
 
 .rp-pipe-wrapper.rp-size-m {
-    height: 20px;
+    height: 15px;
 }
 
 .rp-pipe-wrapper.rp-size-l {
-    height: 25px;
+    height: 20px;
 }
 
 .rp-pipe-wrapper.rp-size-xl {
-    height: 30px;
+    height: 25px;
 }
 
 .rp-pipe-wrapper.rp-state-active {
