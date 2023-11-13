@@ -1,0 +1,167 @@
+/* State */
+.rp-state-active {
+    background: white;
+}
+
+.rp-state-active.rp-intent-none {
+    animation: pulse-none 2s infinite;
+}
+
+.rp-state-active.rp-intent-in-progress {
+    animation: pulse-in-progress 2s infinite;
+}
+
+.rp-state-active.rp-intent-success {
+    animation: pulse-success 2s infinite;
+}
+
+.rp-state-active.rp-intent-warning {
+    animation: pulse-warning 2s infinite;
+}
+
+.rp-state-active.rp-intent-failure {
+    animation: pulse-failure 2s infinite;
+}
+
+.rp-state-active.rp-intent-skipped {
+    animation: pulse-skipped 2s infinite;
+}
+
+.rp-clickable:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+/* Intents */
+.rp-intent-none {
+    background-color: #5f6b7c;
+    border-color: #d2d5da;
+}
+
+.rp-intent-in-progress {
+    background-color: #2d72d2;
+    border-color: #7ca5dd;
+}
+
+.rp-intent-success {
+    background-color: #238551;
+    border-color: #729984;
+}
+
+.rp-intent-warning {
+    background-color: #fbb360;
+    border-color: #e6caab;
+}
+
+.rp-intent-failure {
+    background-color: #cd4246;
+    border-color: #c98588;
+}
+
+.rp-intent-skipped {
+    background-color: #75787c;
+    border-color: #e0e3e9;
+    opacity: 0.9;
+}
+
+@keyframes pulse-in-progress {
+        0% {
+        filter: brightness(1);
+        box-shadow: 0 0 0 0 rgba(97, 155, 179, 0.7);
+        }
+
+        70% {
+        filter: brightness(1.2);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+        }
+
+        100% {
+        filter: brightness(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        }
+}
+
+@keyframes pulse-success {
+	0% {
+        filter: brightness(1);
+        box-shadow: 0 0 0 0 #729984;
+	}
+	
+	70% {
+        filter: brightness(1.2);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+	
+	100% {
+        filter: brightness(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+@keyframes pulse-warning {
+	0% {
+        filter: brightness(1);
+        box-shadow: 0 0 0 0 #e6caab;
+	}
+	
+	70% {
+        filter: brightness(1.2);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+	
+	100% {
+        filter: brightness(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+@keyframes pulse-none {
+	0% {
+        filter: brightness(1);
+        box-shadow: 0 0 0 0 #d2d5da;
+	}
+	
+	70% {
+        filter: brightness(1.2);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+	
+	100% {
+        filter: brightness(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+@keyframes pulse-failure {
+	0% {
+        filter: brightness(1);
+        box-shadow: 0 0 0 0 #c98588;
+	}
+	
+	70% {
+        filter: brightness(1.2);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+	
+	100% {
+        filter: brightness(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+@keyframes pulse-skipped {
+	0% {
+        filter: brightness(1);
+        box-shadow: 0 0 0 0 #e0e3e9;
+	}
+	
+	70% {
+        filter: brightness(1.2);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+	
+	100% {
+        filter: brightness(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}

@@ -47,5 +47,8 @@
     "rollup-plugin-dts": "^6.1.0",
     "storybook": "^7.5.1",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@tabler/icons-react": "^2.40.0"
   }
 }
