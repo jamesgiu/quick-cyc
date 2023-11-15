@@ -1,7 +1,7 @@
 import React, { CSSProperties } from "react";
 import { ReactPipesIntent, ReactPipesSize } from "../../types";
 import * as allIcons from "@tabler/icons-react";
-import { ReactPipesIcons } from "./shared/icons";
+import { ReactPipesIcons } from "../../icons";
 import "./ReactPipesNode.css";
 import "../../../index.css";
 

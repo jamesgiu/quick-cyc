@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import React, { useState } from "react";
 import "./Demo.css";
 import ReactPipes from "../ReactPipes";
-import { ReactPipesIcons } from "../ReactPipes/shared/ReactPipesNode/shared/icons";
 import { ReactPipesIntent, ReactPipesSize } from "../ReactPipes/types";
+import { ReactPipesIcons } from "../ReactPipes/icons";
 
 export const Demo = () => {
 
