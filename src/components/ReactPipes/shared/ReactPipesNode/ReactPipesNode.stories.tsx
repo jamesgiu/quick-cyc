@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { ReactPipesIntent, ReactPipesSize } from '../../types';
-import { ReactPipesIcons } from './shared/icons';
+import { ReactPipesIcons } from '../../icons';
 import ReactPipesNode from './ReactPipesNode';
 
 const meta: Meta<typeof ReactPipesNode> = {
