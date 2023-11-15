@@ -6,7 +6,7 @@
     "rollup": "rollup -c",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "deploy": "npm run rollup && npm run publish"
+    "deploy": "npm run rollup && npm publish --access public"
   },
   "repository": {
     "type": "git",
