@@ -7,6 +7,12 @@ import { ReactPipesIntent, ReactPipesSize } from './types';
 const meta: Meta<typeof ReactPipes> = {
     title: 'Pipeline',
     component: ReactPipes,
+    parameters: {
+      // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
+      layout: 'centered',
+    },
+    // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
+    tags: ['autodocs']
   };
 
 type Story = StoryObj<typeof ReactPipes>;
