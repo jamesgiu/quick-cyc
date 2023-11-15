@@ -1,6 +1,6 @@
 {
   "name": "quick-acyclic",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A component library for pipelines and acyclic flows in React",
   "main": "index.ts",
   "scripts": {
@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/jamesgiu/quick-acyclic/issues"
   },
-  "homepage": "https://github.com/jamesgiu/quick-acyclic#readme",
+  "homepage": "https://jamesgiu.github.io/quick-acyclic/",
   "devDependencies": {
     "@babel/preset-env": "^7.23.2",
     "@babel/preset-react": "^7.22.15",
