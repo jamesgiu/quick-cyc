@@ -1,7 +1,7 @@
 {
-  "name": "react-pipes",
-  "version": "1.0.0",
-  "description": "A component library for pipelines in React",
+  "name": "quick-acyclic",
+  "version": "0.0.1",
+  "description": "A component library for pipelines and acyclic flows in React",
   "main": "index.ts",
   "scripts": {
     "rollup": "rollup -c",
@@ -10,21 +10,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamesgiu/react-pipes.git"
+    "url": "git+https://github.com/jamesgiu/quick-acyclic.git"
   },
   "keywords": [
     "react",
     "pipelines",
+    "ci/cd",
+    "continuous integration",
+    "continuous development",
+    "loading",
+    "tabler-icons",
+    "icons",
+    "progress",
+    "DAG",
+    "acyclic",
     "component",
     "pipeline",
     "stepper"
   ],
   "author": "jamesgiu",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/jamesgiu/react-pipes/issues"
+    "url": "https://github.com/jamesgiu/quick-acyclic/issues"
   },
-  "homepage": "https://github.com/jamesgiu/react-pipes#readme",
+  "homepage": "https://github.com/jamesgiu/quick-acyclic#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.23.2",
     "@babel/preset-react": "^7.22.15",

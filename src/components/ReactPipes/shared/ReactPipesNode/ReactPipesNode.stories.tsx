@@ -7,6 +7,12 @@ import ReactPipesNode from './ReactPipesNode';
 const meta: Meta<typeof ReactPipesNode> = {
     title: 'PipelineNode',
     component: ReactPipesNode,
+    parameters: {
+      // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
+      layout: 'centered',
+    },
+    // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
+    tags: ['autodocs']
   };
 
 type Story = StoryObj<typeof ReactPipesNode>;
