@@ -1,6 +1,6 @@
 {
   "name": "quick-acyclic",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A component library for pipelines and acyclic flows in React",
   "scripts": {
     "rollup": "rollup -c",

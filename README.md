@@ -1,7 +1,9 @@
 ![ezgif-4-fef5b85f32](https://github.com/jamesgiu/react-pipes/assets/13777223/57c7879e-4438-44a2-86d5-3bfa50df5b22)
 
-# 🔀 Quick Acyclic React Pipes
+# 🔀 Quick Acyclic React Pipes - NOT RECOMMENDED FOR PRODUCTION
 A component library for displaying pipelines in React.
+
+This component library is currently under construction and is not recommended for production at this stage.
 
 ## 📚 Hosted documentation
 Check out the [hosted documentation](https://jamesgiu.github.io/quick-acyclic/).
