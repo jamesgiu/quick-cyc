@@ -7,7 +7,7 @@
     margin: auto;
     margin-left: -10px;
     margin-right: -10px;
-    z-index: -100;
+    z-index: -1;
 }
 
 .qc-subpipeline .qc-node-wrapper {

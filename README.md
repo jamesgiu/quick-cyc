@@ -24,52 +24,29 @@ npm i quick-cyc
 ### Quick code example
 ```
 <Pipeline
-  label="Pipeline"
+  label= {'Pipeline'}
   schema={[
     {
-      active: false,
-      attempts: 1,
-      icon: 'Icon2fa',
-      intent: 'qc-intent-success',
-      size: 'qc-size-m'
+    icon:PipelineIcons.Icon2fa,
+    intent:PipelineIntent.SUCCESS,
+    active:false,
+    attempts:1,
+    size:PipelineSize.M,
     },
     {
-      active: false,
-      intent: 'qc-intent-success',
-      size: 'qc-size-s'
+      intent:PipelineIntent.SUCCESS,
+      active:false,
+      size:PipelineSize.S,
     },
     {
-      active: false,
-      attempts: 1,
-      icon: 'IconAward',
-      intent: 'qc-intent-success',
-      size: 'qc-size-m'
-    },
-    {
-      active: false,
-      intent: 'qc-intent-success',
-      size: 'qc-size-s'
-    },
-    {
-      active: true,
-      icon: 'IconClock',
-      intent: 'qc-intent-in-progress',
-      size: 'qc-size-m'
-    },
-    {
-      active: true,
-      intent: 'qc-intent-in-progress',
-      progressPercent: 30,
-      size: 'qc-size-s'
-    },
-    {
-      active: false,
-      icon: 'Icon3dRotate',
-      intent: 'qc-intent-none',
-      size: 'qc-size-m'
+      icon:PipelineIcons.IconAward,
+      intent:PipelineIntent.SUCCESS,
+      active:false,
+      attempts:1,
+      size:PipelineSize.M,
     }
   ]}
-/>
+  />
 ```
 
 ## ⚙ Components
