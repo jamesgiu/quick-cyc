@@ -1,4 +1,4 @@
-.rp-node-wrapper {
+.qc-node-wrapper {
     border-radius: 50%;
     display: inline-flex;
     padding: 20px;
@@ -10,7 +10,7 @@
     z-index: 0;
 }
 
-.rp-node-percent-complete {
+.qc-node-percent-complete {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -22,31 +22,31 @@
     transform: rotate(270deg);
 }
 
-.rp-node-wrapper.rp-intent-failure .rp-node.rp-node-loading .rp-node-percent-complete {
+.qc-node-wrapper.qc-intent-failure .qc-node.qc-node-loading .qc-node-percent-complete {
     background: linear-gradient(#cd4246 0 0) left/100% 0% no-repeat #ccc;
 }
 
-.rp-node-wrapper.rp-intent-none .rp-node.rp-node-loading .rp-node-percent-complete {
+.qc-node-wrapper.qc-intent-none .qc-node.qc-node-loading .qc-node-percent-complete {
     background: linear-gradient(#5f6b7c 0 0) left/100% 0% no-repeat #ccc;
 }
 
-.rp-node-wrapper.rp-intent-in-progress .rp-node.rp-node-loading .rp-node-percent-complete {
+.qc-node-wrapper.qc-intent-in-progress .qc-node.qc-node-loading .qc-node-percent-complete {
     background: linear-gradient(#565b61 0 0) left/100% 0% no-repeat #ccc;
 }
 
-.rp-node-wrapper.rp-intent-success .rp-node.rp-node-loading .rp-node-percent-complete {
+.qc-node-wrapper.qc-intent-success .qc-node.qc-node-loading .qc-node-percent-complete {
     background: linear-gradient(#238551 0 0) left/100% 0% no-repeat #ccc;
 }
 
-.rp-node-wrapper.rp-intent-warning .rp-node.rp-node-loading .rp-node-percent-complete {
+.qc-node-wrapper.qc-intent-warning .qc-node.qc-node-loading .qc-node-percent-complete {
     background: linear-gradient(#fbb360 0 0) left/100% 0% no-repeat #ccc;
 }
 
-.rp-node-wrapper.rp-intent-skipped .rp-node.rp-node-loading .rp-node-percent-complete {
+.qc-node-wrapper.qc-intent-skipped .qc-node.qc-node-loading .qc-node-percent-complete {
     background: linear-gradient(#75787c 0 0) left/100% 0% no-repeat #ccc;
 }
 
-.rp-top-right-icon {
+.qc-top-right-icon {
     border-radius: 50%;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -57,7 +57,7 @@
     z-index: 2;
 }
 
-.rp-top-right-icon.rp-size-xs {
+.qc-top-right-icon.qc-size-xs {
     width: 10px;
     height: 10px;
     padding: 10px;
@@ -65,7 +65,7 @@
     right: -10px;
 }
 
-.rp-top-right-icon.rp-size-s {
+.qc-top-right-icon.qc-size-s {
     width: 15px;
     height: 15px;
     padding: 10px;
@@ -73,7 +73,7 @@
     right: -10px;
 }
 
-.rp-top-right-icon.rp-size-m {
+.qc-top-right-icon.qc-size-m {
     width: 20px;
     height: 20px;
     padding: 10px;
@@ -82,7 +82,7 @@
     font-size: 1.2rem;
 }
 
-.rp-top-right-icon.rp-size-l {
+.qc-top-right-icon.qc-size-l {
     width: 30px;
     height: 30px;
     padding: 10px;
@@ -91,7 +91,7 @@
     font-size: 1.5rem;
 }
 
-.rp-top-right-icon.rp-size-xl {
+.qc-top-right-icon.qc-size-xl {
     width: 35px;
     height: 35px;
     padding: 10px;
@@ -100,42 +100,42 @@
     font-size: 1.8rem;
 }
 
-.rp-node-icon {
+.qc-node-icon {
     z-index: 1;
 }
 
 /* Sizes */
-.rp-node-wrapper.rp-size-xs,
-.rp-node-wrapper.rp-size-xs .rp-node-icon svg {
+.qc-node-wrapper.qc-size-xs,
+.qc-node-wrapper.qc-size-xs .qc-node-icon svg {
     width: 15px;
     height: 15px;
 }
 
-.rp-node-wrapper.rp-size-s,
-.rp-node-wrapper.rp-size-s .rp-node-icon svg {
+.qc-node-wrapper.qc-size-s,
+.qc-node-wrapper.qc-size-s .qc-node-icon svg {
     width: 30px;
     height: 30px;
 }
 
-.rp-node-wrapper.rp-size-m,
-.rp-node-wrapper.rp-size-m .rp-node-icon svg {
+.qc-node-wrapper.qc-size-m,
+.qc-node-wrapper.qc-size-m .qc-node-icon svg {
     width: 40px;
     height: 40px;
 }
 
-.rp-node-wrapper.rp-size-l,
-.rp-node-wrapper.rp-size-l .rp-node-icon svg {
+.qc-node-wrapper.qc-size-l,
+.qc-node-wrapper.qc-size-l .qc-node-icon svg {
     width: 60px;
     height: 60px;
 }
 
-.rp-node-wrapper.rp-size-xl,
-.rp-node-wrapper.rp-size-xl .rp-node-icon svg {
+.qc-node-wrapper.qc-size-xl,
+.qc-node-wrapper.qc-size-xl .qc-node-icon svg {
     width: 80px;
     height: 80px;
 }
 
-.rp-node-wrapper.rp-size-l,
-.rp-node-wrapper.rp-size-xl {
+.qc-node-wrapper.qc-size-l,
+.qc-node-wrapper.qc-size-xl {
     padding: 30px;
 }

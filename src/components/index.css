@@ -1,64 +1,64 @@
 /* State */
-.rp-state-active {
+.qc-state-active {
     background: white;
 }
 
-.rp-state-active.rp-intent-none {
+.qc-state-active.qc-intent-none {
     animation: pulse-none 2s infinite;
 }
 
-.rp-state-active.rp-intent-in-progress {
+.qc-state-active.qc-intent-in-progress {
     animation: pulse-in-progress 2s infinite;
 }
 
-.rp-state-active.rp-intent-success {
+.qc-state-active.qc-intent-success {
     animation: pulse-success 2s infinite;
 }
 
-.rp-state-active.rp-intent-warning {
+.qc-state-active.qc-intent-warning {
     animation: pulse-warning 2s infinite;
 }
 
-.rp-state-active.rp-intent-failure {
+.qc-state-active.qc-intent-failure {
     animation: pulse-failure 2s infinite;
 }
 
-.rp-state-active.rp-intent-skipped {
+.qc-state-active.qc-intent-skipped {
     animation: pulse-skipped 2s infinite;
 }
 
-.rp-clickable:hover {
+.qc-clickable:hover {
     cursor: pointer;
     filter: brightness(1.1);
 }
 
 /* Intents */
-.rp-intent-none {
+.qc-intent-none {
     background-color: #5f6b7c;
     border-color: #d2d5da;
 }
 
-.rp-intent-in-progress {
+.qc-intent-in-progress {
     background-color: #2d72d2;
     border-color: #7ca5dd;
 }
 
-.rp-intent-success {
+.qc-intent-success {
     background-color: #238551;
     border-color: #729984;
 }
 
-.rp-intent-warning {
+.qc-intent-warning {
     background-color: #fbb360;
     border-color: #e6caab;
 }
 
-.rp-intent-failure {
+.qc-intent-failure {
     background-color: #cd4246;
     border-color: #c98588;
 }
 
-.rp-intent-skipped {
+.qc-intent-skipped {
     background-color: #75787c;
     border-color: #e0e3e9;
     opacity: 0.9;

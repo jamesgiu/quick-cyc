@@ -1,6 +1,6 @@
 {
-  "name": "quick-acyclic",
-  "version": "0.0.6",
+  "name": "quick-cyc",
+  "version": "0.0.1",
   "description": "A component library for pipelines and acyclic flows in React",
   "scripts": {
     "rollup": "rollup -c",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamesgiu/quick-acyclic.git"
+    "url": "git+https://github.com/jamesgiu/quick-cyc.git"
   },
   "keywords": [
     "react",
@@ -31,9 +31,9 @@
   "author": "jamesgiu",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/jamesgiu/quick-acyclic/issues"
+    "url": "https://github.com/jamesgiu/quick-cyc/issues"
   },
-  "homepage": "https://jamesgiu.github.io/quick-acyclic/",
+  "homepage": "https://jamesgiu.github.io/quick-cyc/",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [

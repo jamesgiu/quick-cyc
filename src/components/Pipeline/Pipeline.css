@@ -1,20 +1,20 @@
-.rp-pipeline {
+.qc-pipeline {
     display: flex;
     flex-direction: row;
 }
 
-.rp-pipeline .rp-pipe-wrapper {
+.qc-pipeline .qc-pipe-wrapper {
     margin: auto;
     margin-left: -10px;
     margin-right: -10px;
     z-index: -100;
 }
 
-.rp-subpipeline .rp-node-wrapper {
+.qc-subpipeline .qc-node-wrapper {
     margin: auto;
 }
 
-.rp-subpipeline {
+.qc-subpipeline {
     border: dashed 0.1px;
     margin-top: auto;
     margin-bottom: auto;

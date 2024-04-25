@@ -1,4 +1,4 @@
 import "./index.css";
-export { default as ReactPipes } from "./ReactPipes";
-export * from "./ReactPipes/types";
-export * from "./ReactPipes/icons";
+export { default as Pipeline } from "./Pipeline";
+export * from "./Pipeline/types";
+export * from "./Pipeline/icons";
