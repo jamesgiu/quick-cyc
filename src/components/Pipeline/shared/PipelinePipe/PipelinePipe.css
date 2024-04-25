@@ -1,36 +1,36 @@
 /* Sizes */
-.rp-pipe-wrapper.rp-size-xs {
+.qc-pipe-wrapper.qc-size-xs {
     height: 5px;
 }
 
-.rp-pipe-wrapper.rp-size-s {
+.qc-pipe-wrapper.qc-size-s {
     height: 10px;
 }
 
-.rp-pipe-wrapper.rp-size-m {
+.qc-pipe-wrapper.qc-size-m {
     height: 15px;
 }
 
-.rp-pipe-wrapper.rp-size-l {
+.qc-pipe-wrapper.qc-size-l {
     height: 20px;
 }
 
-.rp-pipe-wrapper.rp-size-xl {
+.qc-pipe-wrapper.qc-size-xl {
     height: 25px;
 }
 
-.rp-pipe-wrapper.rp-state-active {
+.qc-pipe-wrapper.qc-state-active {
     background-color: #5f6b7c;
 }
 
-.rp-pipe-wrapper {
+.qc-pipe-wrapper {
     overflow: hidden;
     width: 10vw;
     border-radius: 1em;
     transition: background-color 0.5s, border 0.5s;
 }
 
-.rp-pipe {
+.qc-pipe {
     font-size: 2em;
     padding: 0.5em 1em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -38,38 +38,38 @@
     background-size: 5000%;
 }
 
-.rp-pipe-loading-wrapper {
+.qc-pipe-loading-wrapper {
     overflow: hidden;
 }
 
 /* Intents */
-.rp-pipe-wrapper.rp-state-active.rp-intent-none .rp-pipe {
+.qc-pipe-wrapper.qc-state-active.qc-intent-none .qc-pipe {
     background-image: repeating-linear-gradient(50deg, #5f6b7c, #5f6b7c 10px, #d2d5da 15px, #d2d5da 20px);
 }
 
-.rp-pipe-wrapper.rp-state-active.rp-intent-in-progress .rp-pipe {
+.qc-pipe-wrapper.qc-state-active.qc-intent-in-progress .qc-pipe {
     background-image: repeating-linear-gradient(50deg, #2d72d2, #2d72d2 10px, #7ca5dd 15px, #7ca5dd 20px);
 }
 
-.rp-pipe-wrapper.rp-state-active.rp-intent-success .rp-pipe {
+.qc-pipe-wrapper.qc-state-active.qc-intent-success .qc-pipe {
     background-image: repeating-linear-gradient(50deg, #238551, #238551 10px, #729984 15px, #729984 20px);
 }
 
-.rp-pipe-wrapper.rp-state-active.rp-intent-warning .rp-pipe {
+.qc-pipe-wrapper.qc-state-active.qc-intent-warning .qc-pipe {
     background-image: repeating-linear-gradient(50deg,  #fbb360, #fbb360 10px, #e6caab 15px, #e6caab 20px);
 }
 
-.rp-pipe-wrapper.rp-state-active.rp-intent-failure .rp-pipe {
+.qc-pipe-wrapper.qc-state-active.qc-intent-failure .qc-pipe {
     background-image: repeating-linear-gradient(50deg,  #cd4246, #cd4246 10px, #c98588 15px, #c98588 20px);
 }
 
-.rp-pipe-wrapper.rp-state-active.rp-intent-skipped .rp-pipe {
+.qc-pipe-wrapper.qc-state-active.qc-intent-skipped .qc-pipe {
     background-image: repeating-linear-gradient(50deg, #5f6b7c, #5f6b7c 10px, #d2d5da 15px, #d2d5da 20px);
     opacity: 0.1;
 }
 
 
-.rp-pipe-wrapper.rp-state-active .rp-pipe {
+.qc-pipe-wrapper.qc-state-active .qc-pipe {
     animation: animatedBackground 200s linear infinite;
 }
 

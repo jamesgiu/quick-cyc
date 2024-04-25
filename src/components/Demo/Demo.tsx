@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import React, { useState } from "react";
 import "./Demo.css";
-import ReactPipes from "../ReactPipes";
-import { ReactPipesIntent, ReactPipesSize } from "../ReactPipes/types";
-import { ReactPipesIcons } from "../ReactPipes/icons";
+import Pipeline from "../Pipeline";
+import { PipelineIcons } from "../Pipeline/icons";
+import { PipelineIntent, PipelineSize } from "../Pipeline/types";
 
 export const Demo = () => {
 
@@ -24,54 +24,54 @@ export const Demo = () => {
     }, [percentComplete]);
 
     return (
-    <span className={"rp-pipeline-demo"}>
-      <ReactPipes
+    <span className={"qc-pipeline-demo"}>
+      <Pipeline
         label= {'Pipeline'}
         schema={[
           {
-          icon:ReactPipesIcons.Icon2fa,
-          intent:ReactPipesIntent.SUCCESS,
+          icon:PipelineIcons.Icon2fa,
+          intent:PipelineIntent.SUCCESS,
           active:false,
           attempts:1,
-          size:ReactPipesSize.M,
+          size:PipelineSize.M,
           },
           {
-            intent:ReactPipesIntent.SUCCESS,
+            intent:PipelineIntent.SUCCESS,
             active:false,
-            size:ReactPipesSize.S,
+            size:PipelineSize.S,
           },
           {
-            icon:ReactPipesIcons.IconAward,
-            intent:ReactPipesIntent.SUCCESS,
+            icon:PipelineIcons.IconAward,
+            intent:PipelineIntent.SUCCESS,
             active:false,
             attempts:1,
-            size:ReactPipesSize.M,
+            size:PipelineSize.M,
           },
           {
-            intent:ReactPipesIntent.SUCCESS,
+            intent:PipelineIntent.SUCCESS,
             active:false,
-            size:ReactPipesSize.S,
+            size:PipelineSize.S,
           },
           {
-            icon:ReactPipesIcons.IconClock,
-            intent:percentComplete < 100 ? ReactPipesIntent.IN_PROGRESS : ReactPipesIntent.SUCCESS,
+            icon:PipelineIcons.IconClock,
+            intent:percentComplete < 100 ? PipelineIntent.IN_PROGRESS : PipelineIntent.SUCCESS,
             active:percentComplete < 100 ? true : false,
             attempts: Math.round(percentComplete / 20),
             percentComplete: percentComplete,
-            size:ReactPipesSize.M,
+            size:PipelineSize.M,
           },
           {
-            intent:percentComplete < 100 ? ReactPipesIntent.IN_PROGRESS : ReactPipesIntent.SUCCESS,
+            intent:percentComplete < 100 ? PipelineIntent.IN_PROGRESS : PipelineIntent.SUCCESS,
             active:percentComplete < 100 ? true : false,
             progressPercent: percentComplete,
-            size:ReactPipesSize.S,
+            size:PipelineSize.S,
           },
           {
-            icon:ReactPipesIcons.Icon3dRotate,
-            intent: percentComplete < 90 ? ReactPipesIntent.NONE : percentComplete < 100 ? ReactPipesIntent.IN_PROGRESS : ReactPipesIntent.SUCCESS,
+            icon:PipelineIcons.Icon3dRotate,
+            intent: percentComplete < 90 ? PipelineIntent.NONE : percentComplete < 100 ? PipelineIntent.IN_PROGRESS : PipelineIntent.SUCCESS,
             active:percentComplete < 90 ? true : false,
-            size:ReactPipesSize.M,
-            className: percentComplete > 90 && percentComplete < 100 ? "rp-wiggle" : undefined
+            size:PipelineSize.M,
+            className: percentComplete > 90 && percentComplete < 100 ? "qc-wiggle" : undefined
           }
         ]}
         />

@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { ReactPipesIntent, ReactPipesSize } from '../../types';
-import { ReactPipesIcons } from '../../icons';
-import ReactPipesNode from './ReactPipesNode';
+import { PipelineIntent, PipelineSize } from '../../types';
+import { PipelineIcons } from '../../icons';
+import PipelineNode from './PipelineNode';
 
-const meta: Meta<typeof ReactPipesNode> = {
+const meta: Meta<typeof PipelineNode> = {
     title: 'PipelineNode',
-    component: ReactPipesNode,
+    component: PipelineNode,
     parameters: {
       // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
       layout: 'centered',
@@ -15,15 +15,15 @@ const meta: Meta<typeof ReactPipesNode> = {
     tags: ['autodocs']
   };
 
-type Story = StoryObj<typeof ReactPipesNode>;
+type Story = StoryObj<typeof PipelineNode>;
   
 export const Primary: Story = {
     args: {
       onNodeClick: ()=> {console.log("Clicked!")},
-      intent: ReactPipesIntent.IN_PROGRESS,
+      intent: PipelineIntent.IN_PROGRESS,
       active: true,
-      icon: ReactPipesIcons.Icon2fa,
-      size: ReactPipesSize.M,
+      icon: PipelineIcons.Icon2fa,
+      size: PipelineSize.M,
       attempts: 2,
       percentComplete: 30,
     }

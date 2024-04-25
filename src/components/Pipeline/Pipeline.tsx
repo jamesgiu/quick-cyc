@@ -1,21 +1,21 @@
 import React from "react";
-import "./ReactPipes.css";
+import "./Pipeline.css";
 import "../index.css";
-import Pipe, { ReactPipesPipeProps } from "./shared/ReactPipesPipe/ReactPipesPipe";
-import PipelineNode, { ReactPipesNodeProps } from "./shared/ReactPipesNode/ReactPipesNode";
+import Pipe, { PipelinePipeProps as PipelinePipeProps } from "./shared/PipelinePipe/PipelinePipe";
+import { PipelineNode, PipelineNodeProps } from "./shared/PipelineNode/PipelineNode";
 
-export interface ReactPipesProps {
+export interface PipelineProps {
   label: string;
-  schema: Array<ReactPipesNodeProps | ReactPipesPipeProps | ReactPipesProps>
+  schema: Array<PipelineNodeProps | PipelinePipeProps | PipelineProps>
 }
 
-const renderPipeline = (schema: Array<ReactPipesNodeProps| ReactPipesPipeProps | ReactPipesProps>) : JSX.Element[] => {
+const renderPipeline = (schema: Array<PipelineNodeProps| PipelinePipeProps | PipelineProps>) : JSX.Element[] => {
   const elements : JSX.Element[] = [];
 
   schema.forEach((item) => {
     // Ensure we are dealing with a node, otherwise, it's a pipe (// FIXME bit hacky)
     if (Object.keys(item).includes("icon")) {
-      const node = item as ReactPipesNodeProps;
+      const node = item as PipelineNodeProps;
         elements.push(
           <PipelineNode
             className={node.className}
@@ -29,10 +29,10 @@ const renderPipeline = (schema: Array<ReactPipesNodeProps| ReactPipesPipeProps |
           />
       );
     } else if (Object.keys(item).includes("schema")) { 
-      const pipeline = item as ReactPipesProps;
+      const pipeline = item as PipelineProps;
         elements.push(
-          <span className={"rp-subpipeline"}>
-            <ReactPipes
+          <span className={"qc-subpipeline"}>
+            <Pipeline
               label="embedded"
               schema={pipeline.schema}
             />
@@ -40,7 +40,7 @@ const renderPipeline = (schema: Array<ReactPipesNodeProps| ReactPipesPipeProps |
         )
     }
     else {
-      const pipe = item as ReactPipesPipeProps; 
+      const pipe = item as PipelinePipeProps; 
       elements.push(
         <Pipe
           intent={pipe.intent}
@@ -56,10 +56,10 @@ const renderPipeline = (schema: Array<ReactPipesNodeProps| ReactPipesPipeProps |
 };
 
 
-export const ReactPipes = (props: ReactPipesProps) => {
-  return <span className={"rp-pipeline"}>
+export const Pipeline = (props: PipelineProps) => {
+  return <span className={"qc-pipeline"}>
     {renderPipeline(props.schema)}
   </span>;
 };
 
-export default ReactPipes;
+export default Pipeline;
