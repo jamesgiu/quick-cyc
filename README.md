@@ -1,6 +1,6 @@
 ![ezgif-4-fef5b85f32](https://github.com/jamesgiu/react-pipes/assets/13777223/57c7879e-4438-44a2-86d5-3bfa50df5b22)
 
-# 🔀 Quick Cyc ([sɪk]) - NOT RECOMMENDED FOR PRODUCTION
+# 🔀 Quick Cyc ([sɪk])
 A component library for displaying pipelines in React.
 
 This component library is currently under construction and is not recommended for production at this stage.
@@ -23,53 +23,30 @@ npm i quick-cyc
 
 ### Quick code example
 ```
-<ReactPipes
-  label="Pipeline"
+<Pipeline
+  label= {'Pipeline'}
   schema={[
     {
-      active: false,
-      attempts: 1,
-      icon: 'Icon2fa',
-      intent: 'qc-intent-success',
-      size: 'qc-size-m'
+    icon:PipelineIcons.Icon2fa,
+    intent:PipelineIntent.SUCCESS,
+    active:false,
+    attempts:1,
+    size:PipelineSize.M,
     },
     {
-      active: false,
-      intent: 'qc-intent-success',
-      size: 'qc-size-s'
+      intent:PipelineIntent.SUCCESS,
+      active:false,
+      size:PipelineSize.S,
     },
     {
-      active: false,
-      attempts: 1,
-      icon: 'IconAward',
-      intent: 'qc-intent-success',
-      size: 'qc-size-m'
-    },
-    {
-      active: false,
-      intent: 'qc-intent-success',
-      size: 'qc-size-s'
-    },
-    {
-      active: true,
-      icon: 'IconClock',
-      intent: 'qc-intent-in-progress',
-      size: 'qc-size-m'
-    },
-    {
-      active: true,
-      intent: 'qc-intent-in-progress',
-      progressPercent: 30,
-      size: 'qc-size-s'
-    },
-    {
-      active: false,
-      icon: 'Icon3dRotate',
-      intent: 'qc-intent-none',
-      size: 'qc-size-m'
+      icon:PipelineIcons.IconAward,
+      intent:PipelineIntent.SUCCESS,
+      active:false,
+      attempts:1,
+      size:PipelineSize.M,
     }
   ]}
-/>
+  />
 ```
 
 ## ⚙ Components
@@ -105,6 +82,6 @@ npm i quick-cyc
 
 | Prop          | Description        | Optional  |
 | ------------- |:-------------:| -----:|
-| schema      | (ReactPipesProps \| ReactPipesNodeProps \| ReactPipesPipeProps)[]  | no
+| schema      | (PipelineProps \| PipelineNodeProps \| PipelinePipesProps)[]  | no
 
 <img src="https://github.com/jamesgiu/quick-cyc/assets/13777223/7706e6f4-b3e6-49a0-a693-42e0069a11bb" width="50" height="50" align="right"/>

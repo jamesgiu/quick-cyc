@@ -7,7 +7,7 @@
     border: solid;
     position: relative;
     transition: background-color 0.5s, border 0.5s;
-    z-index: 0;
+    z-index: 1;
 }
 
 .qc-node-percent-complete {
@@ -17,7 +17,7 @@
     top: 0;
     left: 0;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 2;
     opacity: 0.3;
     transform: rotate(270deg);
 }
@@ -54,7 +54,7 @@
     text-align: center;
     vertical-align: middle;
     border: solid 0.1px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .qc-top-right-icon.qc-size-xs {
@@ -101,7 +101,7 @@
 }
 
 .qc-node-icon {
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Sizes */
