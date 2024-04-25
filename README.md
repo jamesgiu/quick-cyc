@@ -1,6 +1,6 @@
 ![ezgif-4-fef5b85f32](https://github.com/jamesgiu/react-pipes/assets/13777223/57c7879e-4438-44a2-86d5-3bfa50df5b22)
 
-# 🔀 Quick Cyc ([sɪk]) - NOT RECOMMENDED FOR PRODUCTION
+# 🔀 Quick Cyc ([sɪk])
 A component library for displaying pipelines in React.
 
 This component library is currently under construction and is not recommended for production at this stage.
