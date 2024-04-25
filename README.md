@@ -23,7 +23,7 @@ npm i quick-cyc
 
 ### Quick code example
 ```
-<ReactPipes
+<Pipeline
   label="Pipeline"
   schema={[
     {
@@ -105,6 +105,6 @@ npm i quick-cyc
 
 | Prop          | Description        | Optional  |
 | ------------- |:-------------:| -----:|
-| schema      | (ReactPipesProps \| ReactPipesNodeProps \| ReactPipesPipeProps)[]  | no
+| schema      | (PipelineProps \| PipelineNodeProps \| PipelinePipesProps)[]  | no
 
 <img src="https://github.com/jamesgiu/quick-cyc/assets/13777223/7706e6f4-b3e6-49a0-a693-42e0069a11bb" width="50" height="50" align="right"/>
