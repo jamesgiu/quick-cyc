@@ -1,4 +1,4 @@
-import React, { CSSProperties } from "react";
+import React from "react";
 import { PipelineIntent, PipelineSize } from "../../types";
 import * as allIcons from "@tabler/icons-react";
 import { PipelineIcons } from "../../icons";
@@ -14,6 +14,8 @@ export interface PipelineNodeProps {
     percentComplete?: number,
     attempts?: number,
     onNodeClick?: ()=>void,
+    innerLabel?: string,
+    outerLabel?: string,
     className?: string,
 }
 
@@ -41,7 +43,18 @@ export const PipelineNode = (props: PipelineNodeProps) => {
                 }
                 <span className={"qc-node-icon"} onClick={props.onNodeClick}>
                     <IconToBeUsed/>
-                </span>    
+                    {props.innerLabel && 
+                    <span className={"qc-node-label"}>
+                            {props.innerLabel}
+                    </span>}
+                </span> 
+
+                {props.outerLabel && 
+                <div className={"qc-node-outer-label" + ` ${props.intent}`}>
+                    <span className="qc-node-outer-label-inner">
+                        {props.outerLabel}
+                    </span>
+                </div>}   
             </span>
     </span>);
   };

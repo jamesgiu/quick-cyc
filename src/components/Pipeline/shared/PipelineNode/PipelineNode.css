@@ -139,3 +139,38 @@
 .qc-node-wrapper.qc-size-xl {
     padding: 30px;
 }
+
+.qc-node-label {
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-top: -5px;
+}
+
+.qc-size-xs .qc-node-label,
+.qc-size-s .qc-node-label,
+.qc-size-xs .qc-node-outer-label,
+.qc-size-s .qc-node-outer-label {
+    font-size: 0.8rem;
+}
+
+.qc-size-l .qc-node-label,
+.qc-size-xl .qc-node-label {
+    font-size: 1.2rem;
+}
+
+.qc-node-outer-label {
+    border-style:solid;
+    bottom: 1;
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.qc-node-outer-label-inner {
+    margin: 5px;
+}
