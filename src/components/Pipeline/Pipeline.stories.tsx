@@ -194,6 +194,61 @@ export const Subpipeline: Story = {
     ]
   }
 };
+
+export const Annotated: Story = {
+  args: {
+    label: 'Annotated pipeline',
+    schema: [
+      {
+      icon:PipelineIcons.Icon2fa,
+      intent:PipelineIntent.SUCCESS,
+      active:false,
+      attempts:1,
+      size:PipelineSize.M,
+      outerLabel: "Auth",
+      },
+      {
+        intent:PipelineIntent.SUCCESS,
+        active:false,
+        size:PipelineSize.S,
+      },
+      {
+        icon:PipelineIcons.IconAward,
+        intent:PipelineIntent.SUCCESS,
+        active:false,
+        attempts:1,
+        size:PipelineSize.M,
+        outerLabel: "Verify",
+      },
+      {
+        intent:PipelineIntent.SUCCESS,
+        active:false,
+        size:PipelineSize.S,
+      },
+      {
+        icon:PipelineIcons.IconClock,
+        intent:PipelineIntent.IN_PROGRESS,
+        active:true,
+        size:PipelineSize.M,
+        outerLabel: "Sleep",
+      },
+      {
+        intent:PipelineIntent.IN_PROGRESS,
+        active:true,
+        progressPercent: 30,
+        size:PipelineSize.S,
+      },
+      {
+        icon:PipelineIcons.Icon3dRotate,
+        intent:PipelineIntent.NONE,
+        active:false,
+        size:PipelineSize.M,
+        outerLabel: "Restore",
+      },
+    ]
+  }
+};
+
   
       
 export default meta;

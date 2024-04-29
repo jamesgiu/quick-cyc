@@ -26,6 +26,8 @@ const renderPipeline = (schema: Array<PipelineNodeProps| PipelinePipeProps | Pip
             percentComplete={node.percentComplete}
             size={node.size}
             active={node.active}
+            innerLabel={node.innerLabel}
+            outerLabel={node.outerLabel}
           />
       );
     } else if (Object.keys(item).includes("schema")) { 

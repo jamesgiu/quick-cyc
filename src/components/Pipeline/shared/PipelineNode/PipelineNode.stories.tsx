@@ -25,7 +25,8 @@ export const Primary: Story = {
       icon: PipelineIcons.Icon2fa,
       size: PipelineSize.M,
       attempts: 2,
-      percentComplete: 30,
+      percentComplete: 80,
+      outerLabel: "Deploy",
     }
 };
 
