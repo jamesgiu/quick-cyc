@@ -3,9 +3,9 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
+import ignore from "rollup-plugin-ignore"
 
-
-import packageJson from "./package.json" assert { type: "json" };
+import packageJson from "./package.json" with { type: "json" };
 
 export default [
   {
@@ -28,6 +28,7 @@ export default [
       typescript({ tsconfig: "./tsconfig.json" }),
       // NEW
       postcss(),
+      ignore(["**/*.test.tsx", "**/*.stories.tsx"]),
     ],
   },
   {

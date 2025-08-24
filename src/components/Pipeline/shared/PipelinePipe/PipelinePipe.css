@@ -1,79 +1,122 @@
 /* Sizes */
 .qc-pipe-wrapper.qc-size-xs {
-    height: 5px;
+  height: 5px;
 }
 
 .qc-pipe-wrapper.qc-size-s {
-    height: 10px;
+  height: 10px;
 }
 
 .qc-pipe-wrapper.qc-size-m {
-    height: 15px;
+  height: 15px;
 }
 
 .qc-pipe-wrapper.qc-size-l {
-    height: 20px;
+  height: 20px;
 }
 
 .qc-pipe-wrapper.qc-size-xl {
-    height: 25px;
+  height: 25px;
 }
 
 .qc-pipe-wrapper.qc-state-active {
-    background-color: #5f6b7c;
+  background-color: #5f6b7c;
 }
 
 .qc-pipe-wrapper {
-    overflow: hidden;
-    width: 10vw;
-    border-radius: 1em;
-    transition: background-color 0.5s, border 0.5s;
+  overflow: hidden;
+  width: 10vw;
+  border-radius: 1em;
+  transition:
+    background-color 0.5s,
+    border 0.5s;
 }
 
 .qc-pipe {
-    font-size: 2em;
-    padding: 0.5em 1em;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    /* Expanded the size of the image to prevent visual blips when animation loop repeats */
-    background-size: 5000%;
+  font-size: 2em;
+  padding: 0.5em 1em;
+  box-shadow: rgb(0 0 0 / 24%) 0 3px 8px;
+
+  /* Expanded the size of the image to prevent visual blips when animation loop repeats */
+  background-size: 5000%;
+}
+
+.qc-pipe-wrapper.qc-state-active .qc-pipe {
+  animation: animated-background 200s linear infinite;
 }
 
 .qc-pipe-loading-wrapper {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* Intents */
 .qc-pipe-wrapper.qc-state-active.qc-intent-none .qc-pipe {
-    background-image: repeating-linear-gradient(50deg, #5f6b7c, #5f6b7c 10px, #d2d5da 15px, #d2d5da 20px);
+  background-image: repeating-linear-gradient(
+    50deg,
+    #5f6b7c,
+    #5f6b7c 10px,
+    #d2d5da 15px,
+    #d2d5da 20px
+  );
 }
 
 .qc-pipe-wrapper.qc-state-active.qc-intent-in-progress .qc-pipe {
-    background-image: repeating-linear-gradient(50deg, #2d72d2, #2d72d2 10px, #7ca5dd 15px, #7ca5dd 20px);
+  background-image: repeating-linear-gradient(
+    50deg,
+    #2d72d2,
+    #2d72d2 10px,
+    #7ca5dd 15px,
+    #7ca5dd 20px
+  );
 }
 
 .qc-pipe-wrapper.qc-state-active.qc-intent-success .qc-pipe {
-    background-image: repeating-linear-gradient(50deg, #238551, #238551 10px, #729984 15px, #729984 20px);
+  background-image: repeating-linear-gradient(
+    50deg,
+    #238551,
+    #238551 10px,
+    #729984 15px,
+    #729984 20px
+  );
 }
 
 .qc-pipe-wrapper.qc-state-active.qc-intent-warning .qc-pipe {
-    background-image: repeating-linear-gradient(50deg,  #fbb360, #fbb360 10px, #e6caab 15px, #e6caab 20px);
+  background-image: repeating-linear-gradient(
+    50deg,
+    #fbb360,
+    #fbb360 10px,
+    #e6caab 15px,
+    #e6caab 20px
+  );
 }
 
 .qc-pipe-wrapper.qc-state-active.qc-intent-failure .qc-pipe {
-    background-image: repeating-linear-gradient(50deg,  #cd4246, #cd4246 10px, #c98588 15px, #c98588 20px);
+  background-image: repeating-linear-gradient(
+    50deg,
+    #cd4246,
+    #cd4246 10px,
+    #c98588 15px,
+    #c98588 20px
+  );
 }
 
 .qc-pipe-wrapper.qc-state-active.qc-intent-skipped .qc-pipe {
-    background-image: repeating-linear-gradient(50deg, #5f6b7c, #5f6b7c 10px, #d2d5da 15px, #d2d5da 20px);
-    opacity: 0.1;
+  background-image: repeating-linear-gradient(
+    50deg,
+    #5f6b7c,
+    #5f6b7c 10px,
+    #d2d5da 15px,
+    #d2d5da 20px
+  );
+  opacity: 0.1;
 }
 
-
-.qc-pipe-wrapper.qc-state-active .qc-pipe {
-    animation: animatedBackground 200s linear infinite;
-}
-
-@keyframes animatedBackground {
-    from { background-position: 0 0; }
-    to { background-position: -100% 0; }
+@keyframes animated-background {
+  from {
+    background-position: 0 0;
   }
+
+  to {
+    background-position: -100% 0;
+  }
+}
