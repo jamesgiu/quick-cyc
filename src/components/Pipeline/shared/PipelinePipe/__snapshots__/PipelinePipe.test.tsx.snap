@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Snapshot test 1`] = `
+<div>
+  <div
+    class="qc-pipe-wrapper qc-size-m qc-intent-in-progress qc-state-active"
+  >
+    <div
+      class="qc-pipe-loading-wrapper"
+    >
+      <div
+        class="qc-pipe"
+      />
+    </div>
+  </div>
+</div>
+`;
