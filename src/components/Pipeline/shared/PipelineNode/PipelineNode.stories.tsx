@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react-webpack5";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { PipelineIntent, PipelineSize } from "../../types";
 import { PipelineIcons } from "../../icons";
