@@ -1,176 +1,195 @@
 .qc-node-wrapper {
-    border-radius: 50%;
-    display: inline-flex;
-    padding: 20px;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: solid;
-    position: relative;
-    transition: background-color 0.5s, border 0.5s;
-    z-index: 1;
+  border-radius: 50%;
+  display: inline-flex;
+  padding: 20px;
+  color: white;
+  box-shadow: rgb(0 0 0 / 24%) 0 3px 8px;
+  border: solid;
+  position: relative;
+  transition:
+    background-color 0.5s,
+    border 0.5s;
+  z-index: 1;
 }
 
 .qc-node-percent-complete {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    z-index: 2;
-    opacity: 0.3;
-    transform: rotate(270deg);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: 2;
+  opacity: 0.3;
+  transform: rotate(270deg);
 }
 
-.qc-node-wrapper.qc-intent-failure .qc-node.qc-node-loading .qc-node-percent-complete {
-    background: linear-gradient(#cd4246 0 0) left/100% 0% no-repeat #ccc;
+.qc-node-wrapper.qc-intent-failure
+  .qc-node.qc-node-loading
+  .qc-node-percent-complete {
+  background: linear-gradient(#cd4246 0 0) left/100% 0% no-repeat #ccc;
 }
 
-.qc-node-wrapper.qc-intent-none .qc-node.qc-node-loading .qc-node-percent-complete {
-    background: linear-gradient(#5f6b7c 0 0) left/100% 0% no-repeat #ccc;
+.qc-node-wrapper.qc-intent-none
+  .qc-node.qc-node-loading
+  .qc-node-percent-complete {
+  background: linear-gradient(#5f6b7c 0 0) left/100% 0% no-repeat #ccc;
 }
 
-.qc-node-wrapper.qc-intent-in-progress .qc-node.qc-node-loading .qc-node-percent-complete {
-    background: linear-gradient(#565b61 0 0) left/100% 0% no-repeat #ccc;
+.qc-node-wrapper.qc-intent-in-progress
+  .qc-node.qc-node-loading
+  .qc-node-percent-complete {
+  background: linear-gradient(#565b61 0 0) left/100% 0% no-repeat #ccc;
 }
 
-.qc-node-wrapper.qc-intent-success .qc-node.qc-node-loading .qc-node-percent-complete {
-    background: linear-gradient(#238551 0 0) left/100% 0% no-repeat #ccc;
+.qc-node-wrapper.qc-intent-success
+  .qc-node.qc-node-loading
+  .qc-node-percent-complete {
+  background: linear-gradient(#238551 0 0) left/100% 0% no-repeat #ccc;
 }
 
-.qc-node-wrapper.qc-intent-warning .qc-node.qc-node-loading .qc-node-percent-complete {
-    background: linear-gradient(#fbb360 0 0) left/100% 0% no-repeat #ccc;
+.qc-node-wrapper.qc-intent-warning
+  .qc-node.qc-node-loading
+  .qc-node-percent-complete {
+  background: linear-gradient(#fbb360 0 0) left/100% 0% no-repeat #ccc;
 }
 
-.qc-node-wrapper.qc-intent-skipped .qc-node.qc-node-loading .qc-node-percent-complete {
-    background: linear-gradient(#75787c 0 0) left/100% 0% no-repeat #ccc;
+.qc-node-wrapper.qc-intent-skipped
+  .qc-node.qc-node-loading
+  .qc-node-percent-complete {
+  background: linear-gradient(#75787c 0 0) left/100% 0% no-repeat #ccc;
 }
 
 .qc-top-right-icon {
-    border-radius: 50%;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    position: absolute;
-    text-align: center;
-    vertical-align: middle;
-    border: solid 0.1px;
-    z-index: 3;
+  border-radius: 50%;
+  color: white;
+  box-shadow:
+    rgb(0 0 0 / 25%) 0 54px 55px,
+    rgb(0 0 0 / 12%) 0 -12px 30px,
+    rgb(0 0 0 / 12%) 0 4px 6px,
+    rgb(0 0 0 / 17%) 0 12px 13px,
+    rgb(0 0 0 / 9%) 0 -3px 5px;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  border: solid 0.1px;
+  z-index: 3;
 }
 
 .qc-top-right-icon.qc-size-xs {
-    width: 10px;
-    height: 10px;
-    padding: 10px;
-    top: -10px;
-    right: -10px;
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  top: -10px;
+  right: -10px;
 }
 
 .qc-top-right-icon.qc-size-s {
-    width: 15px;
-    height: 15px;
-    padding: 10px;
-    top: -10px;
-    right: -10px;
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  top: -10px;
+  right: -10px;
 }
 
 .qc-top-right-icon.qc-size-m {
-    width: 20px;
-    height: 20px;
-    padding: 10px;
-    top: -10px;
-    right: -10px;
-    font-size: 1.2rem;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  top: -10px;
+  right: -10px;
+  font-size: 1.2rem;
 }
 
 .qc-top-right-icon.qc-size-l {
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    top: -10px;
-    right: -5px;
-    font-size: 1.5rem;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  top: -10px;
+  right: -5px;
+  font-size: 1.5rem;
 }
 
 .qc-top-right-icon.qc-size-xl {
-    width: 35px;
-    height: 35px;
-    padding: 10px;
-    top: -10px;
-    right: -2px;
-    font-size: 1.8rem;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  top: -10px;
+  right: -2px;
+  font-size: 1.8rem;
 }
 
 .qc-node-icon {
-    z-index: 2;
+  z-index: 2;
 }
 
 /* Sizes */
 .qc-node-wrapper.qc-size-xs,
 .qc-node-wrapper.qc-size-xs .qc-node-icon svg {
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .qc-node-wrapper.qc-size-s,
 .qc-node-wrapper.qc-size-s .qc-node-icon svg {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .qc-node-wrapper.qc-size-m,
 .qc-node-wrapper.qc-size-m .qc-node-icon svg {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .qc-node-wrapper.qc-size-l,
 .qc-node-wrapper.qc-size-l .qc-node-icon svg {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .qc-node-wrapper.qc-size-xl,
 .qc-node-wrapper.qc-size-xl .qc-node-icon svg {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 }
 
 .qc-node-wrapper.qc-size-l,
 .qc-node-wrapper.qc-size-xl {
-    padding: 30px;
+  padding: 30px;
 }
 
 .qc-node-label {
-    margin: auto;
-    text-align: center;
-    display: block;
-    margin-top: -5px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  margin-top: -5px;
+}
+
+.qc-node-outer-label {
+  border-style: solid;
+  bottom: 1px;
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  z-index: 2;
+  opacity: 0.8;
 }
 
 .qc-size-xs .qc-node-label,
 .qc-size-s .qc-node-label,
 .qc-size-xs .qc-node-outer-label,
 .qc-size-s .qc-node-outer-label {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .qc-size-l .qc-node-label,
 .qc-size-xl .qc-node-label {
-    font-size: 1.2rem;
-}
-
-.qc-node-outer-label {
-    border-style:solid;
-    bottom: 1;
-    border-radius: 20px;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    z-index: 2;
-    opacity: 0.8;
+  font-size: 1.2rem;
 }
 
 .qc-node-outer-label-inner {
-    margin: 5px;
+  margin: 5px;
 }

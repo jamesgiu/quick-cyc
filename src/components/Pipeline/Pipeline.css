@@ -1,21 +1,21 @@
 .qc-pipeline {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .qc-pipeline .qc-pipe-wrapper {
-    margin: auto;
-    margin-left: -10px;
-    margin-right: -10px;
-    z-index: 0;
+  margin: auto;
+  margin-left: -10px;
+  margin-right: -10px;
+  z-index: 0;
 }
 
 .qc-subpipeline .qc-node-wrapper {
-    margin: auto;
+  margin: auto;
 }
 
 .qc-subpipeline {
-    border: dashed 0.1px;
-    margin-top: auto;
-    margin-bottom: auto;
+  border: dashed 0.1px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
