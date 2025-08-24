@@ -1,4 +1,3 @@
-import { userEvent, waitFor, expect } from 'storybook/test';
 import type { Meta, StoryObj } from "@storybook/react-webpack5";
 
 import { Pipeline } from "./Pipeline";
@@ -220,6 +219,7 @@ export const Annotated: Story = {
         attempts: 1,
         size: PipelineSize.M,
         outerLabel: "Verify",
+        outerLabelIcon: PipelineIcons.IconTag,
       },
       {
         intent: PipelineIntent.SUCCESS,

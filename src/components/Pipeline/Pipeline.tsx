@@ -35,6 +35,7 @@ const renderPipeline = (
           active={node.active}
           innerLabel={node.innerLabel}
           outerLabel={node.outerLabel}
+          outerLabelIcon={node.outerLabelIcon}
         />,
       );
     } else if (Object.keys(item).includes("schema")) {

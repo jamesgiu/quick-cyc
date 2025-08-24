@@ -1,1 +1,1 @@
-declare module '@tabler/icons-react';
+declare module "@tabler/icons-react";

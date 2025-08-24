@@ -1,6 +1,5 @@
 import React from "react";
 import { PipelineIntent, PipelineSize } from "../../types";
-// @ts-ignore
 import * as allIcons from "@tabler/icons-react";
 import { PipelineIcons } from "../../icons";
 import "./PipelineNode.css";
@@ -16,11 +15,15 @@ export interface PipelineNodeProps {
   onNodeClick?: () => void;
   innerLabel?: string;
   outerLabel?: string;
+  outerLabelIcon?: PipelineIcons;
   className?: string;
 }
 
 export const PipelineNode = (props: PipelineNodeProps) => {
   const IconToBeUsed = allIcons[props.icon];
+  const OuterLabelIcon = props.outerLabelIcon
+    ? allIcons[props.outerLabelIcon]
+    : () => <></>;
 
   return (
     <span
@@ -68,6 +71,7 @@ export const PipelineNode = (props: PipelineNodeProps) => {
         {props.outerLabel && (
           <div className={"qc-node-outer-label" + ` ${props.intent}`}>
             <span className="qc-node-outer-label-inner">
+              <OuterLabelIcon />
               {props.outerLabel}
             </span>
           </div>

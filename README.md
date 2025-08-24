@@ -4,8 +4,6 @@
 
 A component library for displaying pipelines in React.
 
-This component library is currently under construction and is not recommended for production at this stage.
-
 ## 📚 Hosted documentation
 
 Check out the [hosted documentation](https://jamesgiu.github.io/quick-cyc/).
@@ -87,6 +85,9 @@ npm i quick-cyc
 | attempts        |                                                          number                                                          |      yes |
 | progressPercent |                                                          number                                                          |      yes |
 | className       |                                                          string                                                          |      yes |
+| outerLabel      |                                                          string                                                          |      yes |
+| outerLabelIcon  |                       [docs](https://jamesgiu.github.io/quick-cyc/?path=/docs/pipelinenode--docs)                        |      yes |
+
 
 ### Pipeline
 
